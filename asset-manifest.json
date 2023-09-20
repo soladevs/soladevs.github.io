@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.599b9f1d.css",
-    "main.js": "/static/js/main.cf8f3f46.js",
+    "main.js": "/static/js/main.cdf95fcf.js",
     "static/media/MomsTypewriter.ttf": "/static/media/MomsTypewriter.5df507d250664357937f.ttf",
     "index.html": "/index.html",
     "main.599b9f1d.css.map": "/static/css/main.599b9f1d.css.map",
-    "main.cf8f3f46.js.map": "/static/js/main.cf8f3f46.js.map"
+    "main.cdf95fcf.js.map": "/static/js/main.cdf95fcf.js.map"
   },
   "entrypoints": [
     "static/css/main.599b9f1d.css",
-    "static/js/main.cf8f3f46.js"
+    "static/js/main.cdf95fcf.js"
   ]
 }
