@@ -37,7 +37,7 @@ const WritingPage = () => {
               return <PromoCard 
                 headline={article.heading}
                 summary={article.subheading}
-                destinationUrl={"/writing/" + article['url-slug']}
+                destinationUrl={"/#writing/" + article['url-slug']}
                 imageSrc={article['promo-image']}
                 date={article['creation-date']}
               />
