@@ -1,0 +1,62 @@
+[
+  {
+    "heading": "Article",
+    "subheading": "One of the advantages of React is that you can quickly generate HTML chunks using the JSX template system.",
+    "promo-image": "https://unsplash.it/300/200/?random",
+    "promo-image-alt": "Alt text",
+    "section": "Coding",
+    "creation-date": "2022-01-01",
+    "last-updated": "2022-01-01",
+    "url-slug": "example-1"
+  },
+  {
+    "heading": "Article",
+    "subheading": " Looping and presenting the data is a ubiquitous part of building apps with React.",
+    "promo-image": "https://unsplash.it/300/200/?random",
+    "promo-image-alt": "Alt text",
+    "section": "Coding",
+    "creation-date": "2022-01-01",
+    "last-updated": "2022-01-01",
+    "url-slug": "example-2"
+  },
+  {
+    "heading": "Article",
+    "subheading": "Create React App Sample",
+    "promo-image": "https://unsplash.it/300/200/?random",
+    "promo-image-alt": "Alt text",
+    "section": "Coding",
+    "creation-date": "2022-01-01",
+    "last-updated": "2022-01-01",
+    "url-slug": "example-3"
+  },
+  {
+    "heading": "Article",
+    "subheading": "Create React App Sample",
+    "promo-image": "https://unsplash.it/300/200/?random",
+    "promo-image-alt": "Alt text",
+    "section": "Thoughts",
+    "creation-date": "2022-01-01",
+    "last-updated": "2022-01-01",
+    "url-slug": "example-4"
+  },
+  {
+    "heading": "Article",
+    "subheading": "Create React App Sample",
+    "promo-image": "https://unsplash.it/300/200/?random",
+    "promo-image-alt": "Alt text",
+    "section": "Thoughts",
+    "creation-date": "2022-01-01",
+    "last-updated": "2022-01-01",
+    "url-slug": "example-5"
+  },
+  {
+    "heading": "Article",
+    "subheading": "Create React App Sample",
+    "promo-image": "https://unsplash.it/300/200/?random",
+    "promo-image-alt": "Alt text",
+    "section": "Personal",
+    "creation-date": "2022-01-01",
+    "last-updated": "2022-01-01",
+    "url-slug": "example-6"
+  }
+]

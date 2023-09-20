@@ -1,0 +1,61 @@
+.promo-card {
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.promo-card a, .promo-card a:visited, .promo-card p {
+    color: #e4ddd5;
+}
+
+.promo-card_container:hover {
+    color: #F0544F!important;
+
+    & .promo-card_image {
+        box-shadow: 4px 4px 0px #F0544F;
+    }
+}
+
+.promo-card_read-more:hover {
+    color: #F0544F;
+    border: 1px solid #F0544F;
+}
+
+.promo-card_container {
+    text-decoration: none;
+    display: block;
+    align-items: center;
+    justify-items: center;
+}
+
+.promo-card_content {
+    padding: 12px;
+    width: fit-content;
+    max-width: 75%;
+}
+
+.promo-card_image {
+    box-shadow: 2px 2px 5px #3A3335;
+    height: auto;
+    z-index: 2;
+
+}
+
+.promo-card_headline {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+.promo-card_summary {
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+}
+
+.promo-card_date {
+    float: left;
+}
+
+.promo-card_read-more {
+    float: right;
+    margin-bottom: 8px;
+    text-decoration: underline;
+}
