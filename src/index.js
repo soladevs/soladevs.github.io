@@ -13,7 +13,7 @@ import About from './About';
 
 const App = () => {
   let routes = useRoutes([
-    { path: "/", element: <Home /> },
+    { path: "/", index: true, element: <Home /> },
     { path: "/projects", element: <ProjectPage /> },
     { path: "/writing", element: <WritingPage /> },
     { path: "/writing/:articleId", element: <Article /> },
@@ -29,6 +29,5 @@ const root = createRoot(container);
 root.render(
   <HashRouter>
     <App />
-  </HashRouter>,
-  document.getElementById('root')
+  </HashRouter>
 );
