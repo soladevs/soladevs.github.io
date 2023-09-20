@@ -21,7 +21,6 @@ const App = () => {
   return (
     <div>
       <CursorLines />
-      {/* <ReactMarkdown>{exampleMarkdown}</ReactMarkdown> */}
       <NoiseImage
         width={128}
         height={128}
@@ -30,9 +29,10 @@ const App = () => {
         persistence={0.5}
         lacunarity={1.0}
       />
-      <Navbar />
+      <Navbar openInitialState={true}/>
       <div className="main">
         <HeroSection />
+        <h2 style={{textAlign: 'center'}}>this site is under construction</h2>
       <section className="splash-section">
         <div className="splash-container"> 
           <span className='splash-questionmark flip'>?</span>

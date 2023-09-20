@@ -193,7 +193,8 @@ nav ul li a:hover {
   &:after {
     font-size: 1rem;
     display: block;
-    content: "Project link >";
+    content: "External Project link >";
+    width: fit-content;
     color:#F0544F;
     text-decoration: underline;
     border: 1px solid #F0544F;

@@ -51,7 +51,7 @@ const Article = () => {
         persistence={0.5}
         lacunarity={1.0}
       />
-      <Navbar />
+      <Navbar openInitialState={false} />
       <div className="main">
         <HeroSection />
         <div className="article-heading">
