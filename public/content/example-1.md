@@ -35,4 +35,4 @@ Ready to start writing?  Either start changing stuff on the left or
 [Marked]: https://github.com/markedjs/marked/
 [Markdown]: http://daringfireball.net/projects/markdown/
 
-![image](https://unsplash.it/1500/1200)
+![image](https://unsplash.it/720/360)

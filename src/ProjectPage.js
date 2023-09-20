@@ -8,8 +8,8 @@ import ScanlineEffect from './ScanlineEffect';
 import CursorLines from './CursorLines';
 import NoiseImage from './NoiseImage';
 
-import './index.css';
-import './styles.css';
+import './index.scss';
+import './styles.scss';
 import projects from './content/projects.json';
 
 const ProjectPage = () => {

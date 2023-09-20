@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Navbar = (openInitialState) => {
-  const [navEnabled, setNavEnabled] = React.useState(openInitialState);
+  const [navEnabled, setNavEnabled] = React.useState(false);
 
   const handleNavToggle = () => {
     setNavEnabled(!navEnabled);

@@ -9,9 +9,9 @@ import ScanlineEffect from './ScanlineEffect';
 import CursorLines from './CursorLines';
 import NoiseImage from './NoiseImage';
 
-import './styles.css';
-import './index.css';
-import './contact.css';
+import './styles.scss';
+import './index.scss';
+import './article.scss';
 
 const Article = () => {
     const [article, setArticle] = React.useState({});

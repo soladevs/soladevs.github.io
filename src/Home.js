@@ -14,7 +14,7 @@ import NoiseGenerator from './NoiseGenerator';
 import ScanlineEffect from './ScanlineEffect';
 import NoiseImage from './NoiseImage';
 
-import './styles.css';
+import './styles.scss';
 import CursorLines from './CursorLines';
 
 const App = () => {

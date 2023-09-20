@@ -9,9 +9,9 @@ import ScanlineEffect from './ScanlineEffect';
 import CursorLines from './CursorLines';
 import NoiseImage from './NoiseImage';
 
-import './styles.css';
-import './index.css';
-import './article.css';
+import './styles.scss';
+import './index.scss';
+import './article.scss';
 import ContactForm from './components/ContactForm';
 
 const Contact = () => {
