@@ -13,7 +13,7 @@ import About from './About';
 
 const App = () => {
   let routes = useRoutes([
-    { path: "/#", element: <Home /> },
+    { path: "/", element: <Home /> },
     { path: "/projects", element: <ProjectPage /> },
     { path: "/writing", element: <WritingPage /> },
     { path: "/writing/:articleId", element: <Article /> },
