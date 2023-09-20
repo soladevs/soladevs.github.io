@@ -60,10 +60,7 @@ const Article = () => {
             <div className='article-heading-container'>
               <div className='article-text-invert' style={{'backgroundImage': `url(${meta['promo-image']})`}}>
                 <h1>{meta.heading}</h1>
-              </div>
-            </div>
-            <div className='article-meta'>
-              <div className='article-text-invert' style={{'backgroundImage': `url(${meta['promo-image']})`}}>
+                <div className='article-meta'>
                 <div className='article-tags'>
                   <p>- sola</p>
                 </div>
@@ -73,7 +70,8 @@ const Article = () => {
                 </div>
               </div>
             </div>
-          </div>
+              </div>
+            </div>
       <section className="article-body">
           <div className='article-content'>
             <ReactMarkdown>{article}</ReactMarkdown>
