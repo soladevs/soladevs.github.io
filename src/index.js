@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import { BrowserRouter, useRoutes } from "react-router-dom";
+import { BrowserRouter, HashRouter, useRoutes } from "react-router-dom";
 import { createRoot } from 'react-dom/client';
 import Home from './Home';
 import ProjectPage from './ProjectPage';
@@ -13,7 +13,7 @@ import About from './About';
 
 const App = () => {
   let routes = useRoutes([
-    { path: "/", element: <Home /> },
+    { path: "/#", element: <Home /> },
     { path: "/projects", element: <ProjectPage /> },
     { path: "/writing", element: <WritingPage /> },
     { path: "/writing/:articleId", element: <Article /> },
@@ -27,7 +27,8 @@ const App = () => {
 const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
-  <BrowserRouter>
+  <HashRouter>
     <App />
-  </BrowserRouter>
+  </HashRouter>,
+  document.getElementById('root')
 );
