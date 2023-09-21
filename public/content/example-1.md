@@ -19,6 +19,15 @@ That's it.  Pretty simple.  There's also a drop-down option above to switch betw
 Why Markdown?
 -------------
 
+
+```Test code block 
+
+int i; 
+i = 0; 
+i++;
+
+```
+
 It's easy.  It's not overly bloated, unlike HTML.  Also, as the creator of [markdown] says,
 
 > The overriding design goal for Markdown's
