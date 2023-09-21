@@ -6,11 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  overflow: hidden;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 .noise-image {
@@ -28,7 +25,8 @@ code {
 }
 
 .splash-section {
-
+  height: 80vh;
+  overflow-y: hidden;
 }
 
 .splash-container {
@@ -60,7 +58,6 @@ code {
 }
 
 .hero {
-  background-color: #191919;
   padding-top: 10vh;
   padding-bottom: 2vh;
   margin-top: -5vh;
