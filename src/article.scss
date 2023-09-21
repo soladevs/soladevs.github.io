@@ -1,5 +1,10 @@
 body {
+    position: relative;
     overflow-x: hidden;
+}
+
+.article .splash-questionmark {
+    top: 75vh;
 }
 
 .article-body {

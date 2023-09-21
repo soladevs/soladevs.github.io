@@ -52,7 +52,7 @@ const Article = () => {
         lacunarity={1.0}
       />
       <Navbar openInitialState={false} />
-      <div className="main">
+      <div className="main article">
         <HeroSection />
         <div className="article-heading">
           <img src={meta['promo-image']} alt={meta['promo-image-alt']}/>
