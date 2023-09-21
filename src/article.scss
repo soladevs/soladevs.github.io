@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .article-body {
     line-height: 1.2;
     font-size: 1rem;
@@ -67,14 +71,13 @@
 
 .article-heading {
     max-height: 60vh;
-    overflow: hidden;
         
     img {
         width: 100vw;
         position: fixed;
-        top: 0;
         z-index: -1;
         filter: contrast(0.7);
+        overflow: hidden;
     }
 
     .article-heading-wrapper {
@@ -86,9 +89,8 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-size: cover;
+        background-attachment: local;
         width: 100vw;
-        margin-top: -22vh;
-        padding-top: 20vh;
         filter: invert(1) hue-rotate(-45deg) contrast(1.4) saturate(1.6) brightness(1.1);
     }
 
@@ -96,6 +98,7 @@
         display: block;
         font-size: 2rem;
         text-align: right;
+        padding-top: 16px;
         padding-right: 32px;
         padding-left: 15vw;
         z-index: 1;
