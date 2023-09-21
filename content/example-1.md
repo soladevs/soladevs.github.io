@@ -20,7 +20,7 @@ Why Markdown?
 -------------
 
 
-```Test code block 
+```javascript 
 
 int i; 
 i = 0; 
