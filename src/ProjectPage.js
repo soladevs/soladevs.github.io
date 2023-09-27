@@ -48,6 +48,7 @@ const ProjectPage = () => {
                   title={project.heading}
                   description={project.subheading}
                   image={project['promo-image']}
+                  imageAlt={project['promo-image-alt']}
                   tech={project.tech}
                   date={project.creationDate}
                   projectUrl={project['project-url']}

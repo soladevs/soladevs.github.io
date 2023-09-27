@@ -114,6 +114,22 @@ nav ul li a:hover {
   text-align: center;
   margin-bottom: 30px;
   user-select: none;
+  pointer-events: all;
+  padding-top: 10vh;
+  padding-bottom: 2vh;
+  margin-top: -5vh;
+  width: 100vw;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+
+.hero p {
+  letter-spacing: 2px;
+  color: #e4ddd5;
 }
 
 /* About me section styles */
@@ -198,7 +214,7 @@ nav ul li a:hover {
   .promo-card_summary {
     font-size: 1.2rem;
     font-family: 'Source Code Pro';
-    letter-spacing: -2px;
+    letter-spacing: -1px;
   }
 
   .promo-card_content {
@@ -235,6 +251,7 @@ nav ul li a:hover {
 
 .PortfolioItem {
   max-width: 350px;
+  margin-bottom: 16px;
 }
 
 .PortfolioItem__title {
@@ -249,7 +266,7 @@ nav ul li a:hover {
 .PortfolioItem__description {
   font-family: 'Source Code Pro';
   font-size: 1.2rem;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   margin-bottom: 16px;
 }
 
