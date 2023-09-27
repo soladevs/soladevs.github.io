@@ -37,6 +37,7 @@ const WritingPage = () => {
       <Navbar />
       <div className="main">
         <HeroSection />
+        <main>
         <h1 className='page-title'>writing // </h1>
         {Object.entries(articlesBySection).map(([section, articlesInSection]) => (
           <section key={section} className="articles-section">
@@ -57,6 +58,7 @@ const WritingPage = () => {
             </div>
           </section>
         ))}
+        </main>
         <section className="splash-section">
           <div className="splash-container">
             <span className="splash-questionmark flip">?</span>

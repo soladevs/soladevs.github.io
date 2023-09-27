@@ -174,12 +174,12 @@ nav ul li a:hover {
   margin-right: auto;
 }
 
-.articles-section {
-  backdrop-filter: blur(10px);
-}
-
 .page-title {
   margin-left: 10%;
+}
+
+main {
+  backdrop-filter: blur(10px);
 }
 
 .articles-section h2, .projects-sections h2 {

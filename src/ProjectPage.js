@@ -36,6 +36,7 @@ const ProjectPage = () => {
       <Navbar />
       <div className="main">
         <HeroSection />
+        <main>
         <h1 className='page-title'>projects //</h1>
       <section className="projects-sections">
         {Object.entries(projectsBySection).map(([section, projectsInSection]) => (
@@ -61,6 +62,7 @@ const ProjectPage = () => {
             </section>
           ))}
       </section>
+      </main>
       <section className="splash-section">
         <div className="splash-container"> 
           <span className='splash-questionmark flip'>?</span>
