@@ -23,6 +23,19 @@
         "tech": "python, discord.py, SQLite3",
         "availability": "open source",
         "project-url": "https://example.com",
+        "url-slug": "example-1"
+    },
+    {
+        "heading": "Placeholder Content",
+        "subheading": "Discord bot focusing on community management and moderation.",
+        "promo-image": "https://unsplash.it/300/200/?random",
+        "promo-image-alt": "Alt text",
+        "section": "active projects",
+        "creation-date": "2022-01-01",
+        "last-updated": "2022-01-01",
+        "tech": "python, discord.py, SQLite3",
+        "availability": "open source",
+        "project-url": "https://example.com",
         "url-slug": "example-2"
     },
     {

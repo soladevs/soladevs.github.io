@@ -150,21 +150,26 @@ nav ul li a:hover {
   background-color: #555;
 }
 
-/* App Container */
-.app-container {
-  margin: 20px;
-}
-
 /* Article Card */
-.articles-container-container, .projects-section {
-  padding-bottom: 32px;
+.articles-container-container, .projects-sections {
+  padding-bottom: 0px;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.articles-section h1, .projects-section h2 {
+.articles-section {
+  backdrop-filter: blur(10px);
+}
+
+.page-title {
+  margin-left: 10%;
+}
+
+.articles-section h2, .projects-sections h2 {
   margin-bottom: 8px;
+  margin-top: -32px;
+  padding-top: 32px;
   margin-left: 10%;
   user-select: none;
 
@@ -173,11 +178,10 @@ nav ul li a:hover {
 .articles-container, .projects-container {
   margin-left: 10%;
   padding-bottom: 16px;
-  margin-bottom: 16px;
   border-bottom: 2px dashed #3A3335;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(333px, 1fr));
-  gap: 20px;
+  gap: 8px;
 
   div {
     p,a  {
@@ -186,6 +190,27 @@ nav ul li a:hover {
     }
   }
 
+  .promo-card_headline {
+    font-size: 1.3rem;
+    letter-spacing: normal;
+  }
+
+  .promo-card_summary {
+    font-size: 1.2rem;
+    font-family: 'Source Code Pro';
+    letter-spacing: -2px;
+  }
+
+  .promo-card_content {
+    padding-left: 0;
+    padding-bottom: 48px;
+
+    @media screen and (min-width: 720px) {
+      padding-bottom: 8px;
+    }
+  }
+
+
   .promo-card_read-more {
     text-decoration: underline;
 
@@ -193,38 +218,56 @@ nav ul li a:hover {
       transform:scale(1.6);
     }
   }
+
+  img {
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+.projects-sections {
+  backdrop-filter: blur(10px);
+}
+
+.projects-section__title {
+  margin-bottom: 8px;
+}
+
+.PortfolioItem {
+  max-width: 350px;
 }
 
 .PortfolioItem__title {
   font-size: 1.4rem;
   letter-spacing: 1px;
-  margin-bottom: 4px;
-  border-bottom: 2px dashed #3A3335;
-  display: inline-block;
-  
-
-  &:after {
-    font-size: 1rem;
-    display: block;
-    content: "External Project link >";
-    width: fit-content;
-    color:#F0544F;
-    text-decoration: underline;
-    border: 1px solid #F0544F;
-    padding: 2px;
-  }
-}
-
-.PortfolioItem__description {
-  font-size: 1rem;
-  letter-spacing: 0.8px;
-  margin-bottom: 8px;
-
- 
 }
 
 .PortfolioItem__status {
-  float:left;
+  margin-bottom: 16px;
+}
+
+.PortfolioItem__description {
+  font-family: 'Source Code Pro';
+  font-size: 1.2rem;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+}
+
+.PortfolioItem__link-button {
+  float: left;
+  padding: 16px; 
+  text-align: center;
+  font-size: 1rem;
+  max-width: 50%;
+  box-shadow: 0 0 2px #e4ddd5;
+
+  &:hover {
+    cursor: pointer;
+    color: #F0544F;
+    box-shadow: 0 0 5px #F0544F;
+    text-decoration: underline;
+  }
+
 }
 
 .PortfolioItem__date {
@@ -233,6 +276,7 @@ nav ul li a:hover {
 
 .PortfolioItem__tech {
   font-size: 0.9rem;
+  
   margin-bottom: 8px;
 
   &:before {
@@ -243,25 +287,4 @@ nav ul li a:hover {
   &:after {
     content: "::";
   }
-}
-
-/* Testimonial */
-.testimonials-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-/* Project Card */
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-/* Contact Info */
-.contact-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }

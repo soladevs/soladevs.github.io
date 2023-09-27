@@ -14,6 +14,7 @@ body {
   top:0;
   left:0;
   mix-blend-mode: color-burn;
+  filter: contrast(0.9) brightness(1.2);
   opacity: 0.5;
   width: 100vw;
   height: 100vh;
@@ -37,7 +38,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  z-index: -5;
 }
 
 .splash-questionmark {
@@ -48,8 +48,11 @@ body {
   margin-left: 20%;
   user-select: none;
   pointer-events: none;
+  z-index: -5;
   opacity: 0.1;
   overflow: hidden;
+
+  filter: blur(10px);
 }
 
 .flip {

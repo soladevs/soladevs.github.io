@@ -13,6 +13,15 @@ import './styles.scss';
 import projects from './content/projects.json';
 
 const ProjectPage = () => {
+  const projectsBySection = projects.reduce((acc, project) => {
+    const section = project.section || 'other'; 
+    if (!acc[section]) {
+      acc[section] = [];
+    }
+    acc[section].push(project);
+    return acc;
+  }, {});
+
   return (
     <div>
       <CursorLines />
@@ -27,22 +36,29 @@ const ProjectPage = () => {
       <Navbar />
       <div className="main">
         <HeroSection />
-      <section className="projects-section">
-        <h2 className='projects-section__title active'>active projects //</h2>
-        <div className="projects-container">
-          {projects.map((project) => {
-              console.log(project)
-              return <PortfolioItem 
-                title={project.heading}
-                description={project.subheading}
-                image={project['promo-image']}
-                tech={project.tech}
-                date={project.creationDate}
-                url={project['project-url']}
-                status={project.availability}
-              />
-            })}
-        </div>
+        <h1 className='page-title'>projects //</h1>
+      <section className="projects-sections">
+        {Object.entries(projectsBySection).map(([section, projectsInSection]) => (
+          <section key={section} className={"project-section " + section.toLowerCase() + "-section"}>
+            <div className="projects-container-container">
+              <h2 className="projects-section__title">{section.toLowerCase()} //</h2>
+              <div className="projects-container">
+                {projectsInSection.map((project) => (
+                  <PortfolioItem 
+                  title={project.heading}
+                  description={project.subheading}
+                  image={project['promo-image']}
+                  tech={project.tech}
+                  date={project.creationDate}
+                  projectUrl={project['project-url']}
+                  articleUrl={"/#project/" + project['url-slug']}
+                  status={project.availability}
+                />
+                ))}
+                </div>
+              </div>
+            </section>
+          ))}
       </section>
       <section className="splash-section">
         <div className="splash-container"> 

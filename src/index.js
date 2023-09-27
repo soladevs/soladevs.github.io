@@ -8,8 +8,6 @@ import WritingPage from './WritingPage';
 import Article from './Article';
 import Contact from './Contact';
 import About from './About';
-// import Item from './pages/Item';
-// import Contact from './pages/Contact';
 
 const App = () => {
   let routes = useRoutes([

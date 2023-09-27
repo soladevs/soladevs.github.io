@@ -14,6 +14,15 @@ import articles from './content/articles.json';
 import PromoCard from './components/promo-card/PromoCard';
 
 const WritingPage = () => {
+  const articlesBySection = articles.reduce((acc, article) => {
+    const section = article.section || 'other'; 
+    if (!acc[section]) {
+      acc[section] = [];
+    }
+    acc[section].push(article);
+    return acc;
+  }, {});
+
   return (
     <div>
       <CursorLines />
@@ -28,30 +37,33 @@ const WritingPage = () => {
       <Navbar />
       <div className="main">
         <HeroSection />
-      <section className="articles-section">
-        <div className='articles-container-container'>
-        <h1 className='articles-section__title'>writing //</h1>
-        <div className="articles-container">
-          {articles.map((article) => {
-              console.log(article)
-              return <PromoCard 
-                headline={article.heading}
-                summary={article.subheading}
-                destinationUrl={"/#writing/" + article['url-slug']}
-                imageSrc={article['promo-image']}
-                date={article['creation-date']}
-              />
-            })}
-        </div>
-        </div>
-      </section>
-      <section className="splash-section">
-        <div className="splash-container"> 
-          <span className='splash-questionmark flip'>?</span>
-          <span className='splash-questionmark'>?</span>
-        </div>
-       <ScanlineEffect />
-      </section>
+        <h1 className='page-title'>writing // </h1>
+        {Object.entries(articlesBySection).map(([section, articlesInSection]) => (
+          <section key={section} className="articles-section">
+            <div className="articles-container-container">
+              <h2 className="articles-section__title">{section.toLowerCase()} //</h2>
+              <div className="articles-container">
+                {articlesInSection.map((article) => (
+                  <PromoCard
+                    key={article.id} 
+                    headline={article.heading}
+                    summary={article.subheading}
+                    destinationUrl={"/#writing/" + article['url-slug']}
+                    imageSrc={article['promo-image']}
+                    date={article['creation-date']}
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
+        ))}
+        <section className="splash-section">
+          <div className="splash-container">
+            <span className="splash-questionmark flip">?</span>
+            <span className="splash-questionmark">?</span>
+          </div>
+          <ScanlineEffect />
+        </section>
       </div>
     </div>
   );
