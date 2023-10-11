@@ -112,12 +112,9 @@ nav ul li a:hover {
 /* Hero section styles */
 .hero {
   text-align: center;
-  margin-bottom: 30px;
   user-select: none;
   pointer-events: all;
-  padding-top: 10vh;
-  padding-bottom: 2vh;
-  margin-top: -5vh;
+  margin-top: -8.5vh;
   width: 100vw;
 }
 
@@ -125,6 +122,7 @@ nav ul li a:hover {
   font-size: 4rem;
   letter-spacing: 2px;
   text-decoration: underline;
+  width: 100vw;
 }
 
 .hero p {
@@ -275,7 +273,6 @@ main {
   padding: 16px; 
   text-align: center;
   font-size: 1rem;
-  max-width: 50%;
   box-shadow: 0 0 2px #e4ddd5;
 
   &:hover {

@@ -8,13 +8,17 @@ import WritingPage from './WritingPage';
 import Article from './Article';
 import Contact from './Contact';
 import About from './About';
+import Project from './Project';
+import LongformArticle from './LongformArticle';
 
 const App = () => {
   let routes = useRoutes([
     { path: "/", index: true, element: <Home /> },
     { path: "/projects", element: <ProjectPage /> },
+    { path: "/projects/:projectId", element: <Project /> },
     { path: "/writing", element: <WritingPage /> },
     { path: "/writing/:articleId", element: <Article /> },
+    { path: "/gallery/:articleId", element: <LongformArticle /> },
     { path: "/contact", element: <Contact /> },
     { path: "/about", element: <About /> },
     // // ...

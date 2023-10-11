@@ -53,7 +53,7 @@ const ProjectPage = () => {
                   tech={project.tech}
                   date={project.creationDate}
                   projectUrl={project['project-url']}
-                  articleUrl={"/#project/" + project['url-slug']}
+                  articleUrl={"/#projects/" + project['url-slug']}
                   status={project.availability}
                 />
                 ))}

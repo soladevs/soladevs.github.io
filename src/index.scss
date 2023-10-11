@@ -90,3 +90,15 @@ body {
   }
 }
 
+button, .project-link_button {
+  text-decoration: none;
+  color: #e4ddd5;
+  box-shadow: 0px 0px 5px #e4ddd5;
+  border: 2px solid #e4ddd5;
+
+  &:hover {
+      color: #F0544F;
+      box-shadow: 0px 0px 10px #F0544F;
+      border: 2px solid #F0544F;
+  }
+}
