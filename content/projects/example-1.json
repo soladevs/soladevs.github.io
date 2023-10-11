@@ -1,0 +1,54 @@
+{
+    "title": "PlaceholderPlaceholderPlaceholder Placeholder",
+    "tagline": "Create React App Sample",
+    "mainButtons": [
+        {
+            "label": "View",
+            "url": "https://example.com"
+        },
+        {
+            "label": "Source",
+            "url": "https://github.com/"
+        }
+    ],
+    "description": "Google LLC is an American multinational technology company focusing on artificial intelligence, online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, and consumer electronics.",
+    "mainPoints": [
+        "Open Source", "Easy setup", "ABC License"
+    ],
+    "sections": [
+        {
+            "heading": "Setup",
+            "contents": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptatibus."
+        },
+        {
+            "heading": "FAQ",
+            "contents": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptatibus."
+        },
+        {
+            "heading": "Support",
+            "contents": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptatibus."
+        }
+    ],
+    "images": [
+        {
+            "url": "https://unsplash.it/1000/600/?random",
+            "alt": "Alt text"
+        },
+        {
+            "url": "https://unsplash.it/1000/602/?random",
+            "alt": "Alt text"
+        },
+        {
+            "url": "https://unsplash.it/1000/703/?random",
+            "alt": "Alt text"
+        },
+        {
+            "url": "https://unsplash.it/1000/604/?random",
+            "alt": "Alt text"
+        },
+        {
+            "url": "https://unsplash.it/1000/606/?random",
+            "alt": "Alt text"
+        }
+    ]
+}
