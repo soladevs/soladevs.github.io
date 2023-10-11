@@ -153,6 +153,7 @@
 }
 
 .project-features_section {
+    margin-top: 16px;
     display: block;
 
     @media screen and (min-width: 1280px) {
@@ -170,6 +171,8 @@
 }
 
 .project-sections {
+    margin-top: 16px;
+
     display: block;
 
     @media screen and (min-width: 1280px) {
@@ -181,7 +184,7 @@
     width: 100%;
 
     h2 {
-        padding-bottom: 6px;
+    padding-bottom: 6px;
     }
 
     button {
