@@ -74,7 +74,7 @@ function NoiseImage({ width, height, scale, octaves, persistence, lacunarity }) 
         backgroundRepeat: 'repeat',
         backgroundSize: `${width}px ${height}px`,
         border: '1px solid black',
-        zIndex: '999'
+        zIndex: '11'
       }}
     />
   );

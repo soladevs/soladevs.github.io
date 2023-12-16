@@ -53,6 +53,7 @@ main {
 
 .navigation {
   bottom: 10vh;
+  z-index: 99;
 
   @media screen and (min-width: 720px) {
     left: 6vw;

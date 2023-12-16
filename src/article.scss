@@ -27,9 +27,11 @@ html, body {
     }
 
     z-index: -1;
-    height: 20vh;
+    height: 11vh;
 
-    @media screen and (min-width: 720px) {
+    @media screen and (min-width: 480px) {
+        height: 16vh;
+
     }
 }
 
@@ -50,6 +52,8 @@ html, body {
     padding-left: 10vw;
     text-align: left;
     width: 100vw;
+    position: relative;
+    z-index: 12;
 
     @media screen and (min-width: 1024px) {
         padding-left: 25vw;
