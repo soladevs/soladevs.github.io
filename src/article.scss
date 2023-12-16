@@ -30,7 +30,7 @@ html, body {
     height: 12vh;
 
     @media screen and (min-width: 480px) {
-        height: 17vh;
+        height: 16vh;
 
     }
 }
@@ -114,7 +114,7 @@ html, body {
         -webkit-text-fill-color: transparent;
         background-size: cover;
         width: 100vw;
-        filter: invert(1) hue-rotate(-25deg) contrast(1.4) saturate(1) brightness(2);
+        filter: invert(1) hue-rotate(25deg) contrast(2) saturate(1.4) brightness(2) drop-shadow(0 0 1px black);
         position: fixed;
         z-index: -1;
         padding-left: 5vw;
@@ -206,8 +206,9 @@ html, body {
 .background-image {
     width: 100vw;
     height: 100vh;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     position: fixed;
     top: 0;
     left: 0;

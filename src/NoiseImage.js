@@ -20,8 +20,6 @@ function NoiseImage({ width, height, scale, octaves, persistence, lacunarity }) 
           const xCoord = x / scale;
           const yCoord = y / scale;
 
-          scale = Math.random(0.1, 1);
-
           let value = 0;
           let amplitude = 1;
           let frequency = 1;

@@ -28,7 +28,7 @@ const ProjectPage = () => {
       <NoiseImage
         width={128}
         height={128}
-        scale={50}
+        scale={1}
         octaves={5}
         persistence={0.5}
         lacunarity={1.0}

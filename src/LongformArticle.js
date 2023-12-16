@@ -40,10 +40,10 @@ const LongformArticle = () => {
 
     // Fetch background images
     Promise.all([
-      'https://unsplash.it/2000/1200',
-      'https://unsplash.it/2000/1201',
-      'https://unsplash.it/2000/1202',
-      'https://unsplash.it/2000/1203',
+      './content/article-images/2019-protest/1.jpg',
+      './content/article-images/2019-protest/2.jpg',
+      './content/article-images/2019-protest/3.jpg',
+      './content/article-images/2019-protest/4.jpg',
     ]).then((images) => {
       setBackgroundImages(images);
     });
@@ -95,7 +95,7 @@ const LongformArticle = () => {
   return (
     <div>
       <CursorLines />
-      <NoiseImage width={128} height={128} scale={50} octaves={5} persistence={0.5} lacunarity={1.0} />
+      <NoiseImage width={128} height={128} scale={1} octaves={5} persistence={0.5} lacunarity={1.0} />
       <Navbar openInitialState={false} />
       <div className="main article">
         <HeroSection />
