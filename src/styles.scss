@@ -63,6 +63,7 @@ main {
 
 .nav-toggle {
   bottom: 2vh;
+  z-index:99;
   user-select: none;
   font-size: 1.2rem;
   box-shadow: 0 0 5px #e4ddd5;
