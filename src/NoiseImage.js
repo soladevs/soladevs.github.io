@@ -45,22 +45,26 @@ const NoiseImage = React.memo(function NoiseImage(props) {
       }
 
       const imageUrl = canvas.toDataURL();
-      setImageUrls(imageUrls => [...imageUrls, imageUrl]);
+      setImageUrls(imageUrls => {
+        if (imageUrls.length < 5) {
+          return [...imageUrls, imageUrl];
+        }
+        return imageUrls;
+      });
     };
 
-    const numberOfImages = 5;
     // Generate initial noise images
-    for (let i = 0; i <= numberOfImages; i++) {
+    if (imageUrls.length < 5) {
       generateNoiseImage();
     }
 
     const imageRotationInterval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => prevIndex >= numberOfImages ? 0 : prevIndex + 1);
-    }, 500);
+      setCurrentImageIndex((prevIndex) => prevIndex >= 4 ? 0 : prevIndex + 1);
+    }, 250);
 
     // Clean up the timer when unmounting
     return () => clearInterval(imageRotationInterval);
-  }, [width, height, scale, octaves, persistence, lacunarity]);
+  }, [width, height, scale, octaves, persistence, lacunarity, imageUrls]);
 
   useEffect(() => {
     if (imageUrls.length >= 2) {
