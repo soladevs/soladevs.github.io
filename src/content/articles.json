@@ -2,7 +2,7 @@
   {
     "heading": "Article Name",
     "subheading": "One of the advantages of React is that you can quickly generate HTML chunks using the JSX template system.",
-    "promo-image": "./content/z.jpg",
+    "promo-image": "https://unsplash.it/350/350/?random",
     "promo-image-alt": "Alt text",
     "section": "Coding",
     "creation-date": "2022-01-01",

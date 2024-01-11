@@ -4,7 +4,6 @@ import ReactMarkdown from 'react-markdown';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import ScanlineEffect from './ScanlineEffect';
 import CursorLines from './CursorLines';
 import NoiseImage from './NoiseImage';
 
@@ -95,7 +94,7 @@ const LongformArticle = () => {
   return (
     <div>
       <CursorLines />
-      <NoiseImage width={128} height={128} scale={1} octaves={5} persistence={0.5} lacunarity={1.0} />
+      <NoiseImage />
       <Navbar openInitialState={false} />
       <div className="main article">
         <HeroSection />
@@ -113,7 +112,7 @@ const LongformArticle = () => {
             </div>
           ))}
         </div>
-          <ScanlineEffect />
+         
       </div>
     </div>
   );

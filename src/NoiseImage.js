@@ -1,10 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { createNoise2D } from 'simplex-noise';
 
-function NoiseImage({ width, height, scale, octaves, persistence, lacunarity }) {
+const NoiseImage = React.memo(function NoiseImage(props) {
   const imageContainerRef = useRef(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [imageUrls, setImageUrls] = useState([]);
+  const width = 128;
+  const height = 128;
+  const scale = 1;
+  const octaves = 5;
+  const persistence = 0.5;
+  const lacunarity = 1.0;
 
   useEffect(() => {
     const generateNoiseImage = () => {
@@ -50,7 +56,7 @@ function NoiseImage({ width, height, scale, octaves, persistence, lacunarity }) 
 
     const imageRotationInterval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => prevIndex >= numberOfImages ? 0 : prevIndex + 1);
-    }, 250);
+    }, 500);
 
     // Clean up the timer when unmounting
     return () => clearInterval(imageRotationInterval);
@@ -76,6 +82,6 @@ function NoiseImage({ width, height, scale, octaves, persistence, lacunarity }) 
       }}
     />
   );
-}
+});
 
-export default NoiseImage;
+export default React.memo(NoiseImage);

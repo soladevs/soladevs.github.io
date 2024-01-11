@@ -1,12 +1,13 @@
 import React from 'react';
 
-const Navbar = (openInitialState) => {
-  const [navEnabled, setNavEnabled] = React.useState(false);
+const Navbar = ({ openInitialState }) => {
+  const [navEnabled, setNavEnabled] = React.useState(openInitialState);
 
   const handleNavToggle = () => {
     setNavEnabled(!navEnabled);
   }
 
+  
   return (
     <div className='navbar'>
     <div className='nav-toggle' onClick={handleNavToggle}> 
