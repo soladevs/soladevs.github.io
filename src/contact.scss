@@ -46,11 +46,25 @@
     align-items: right;
     
     display: inline;
+
+    height: 5vh;
+    width: 65vw;
+
+    @media screen and (min-width: 768px) {
+        height: 5vh;
+        width: 45vw;
+    }
   }
 
   #message {
+    padding: 4px;
     height: 35vh;
-    width: 35vw;
+    width: 75vw;
+
+    @media screen and (min-width: 768px) {
+        height: 23vh;
+        width: 45vw;
+    }
 
     padding-top: 0;
     vertical-align: top;
