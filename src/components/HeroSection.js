@@ -5,8 +5,8 @@ const HeroSection = ({hideSun = false}) => {
     <a href="#" className='hero-link'>
       <div className="hero">
         <h1 className="hero-title">solapowered</h1>
-        {!hideSun && <img className="hero-sun" src='./sun-200.gif' />}
         <p className="hero-catchphrase">developer, designer, artist</p>
+        {!hideSun && <img className="hero-sun" src='./sun-200.gif' />}
     </div>
     </a>
   );

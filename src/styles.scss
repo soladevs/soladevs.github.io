@@ -131,32 +131,37 @@ nav ul li a:hover {
   pointer-events: all;
   margin-top: -8.5vh;
   width: 100vw;
-  display: inline-flex;
-}
-
-
-
-.hero-sun {
-  max-height: 20%;
-  width: auto;
-  position: fixed;
-  top: 2vh;
-
-  display: none;
 
   @media screen and (min-width: 620px) {
     display: inline-flex;
   }
 }
 
+
+
+.hero-sun {
+  height: 64px;
+  position: relative;
+  margin-top: 14vh;
+
+  @media screen and (min-width: 480px) {
+    margin-top: 20vh;
+  }
+
+  @media screen and (min-width: 620px) {
+    margin-top: 8vh;
+    max-height: 20%;
+    display: inline-flex;
+  }
+}
+
 .hero {
   h1, p {
-      position: fixed;
-      z-index: -1;
-      left: 50%;
-      top: 8vh;
-      transform: translate(-50%, -50%);
-      
+        position: fixed;
+        z-index: -1;
+        left: 50%;
+        top: 8vh;
+        transform: translate(-50%, -50%);
   }
 
   h1 {
