@@ -166,13 +166,11 @@ html, body {
     img {
        max-width: 90vw;
        margin-top: 16px;
-       border: 1px solid common.$primary-text;
+       border: 2px solid common.$primary-text;
        border-radius: 16px 32px 16px 0px;
        display:block;
        z-index: 2;
-
     }
-
     
     em {
         position: relative;
@@ -183,10 +181,9 @@ html, body {
         text-decoration: none;
         text-align: center;
         backdrop-filter: blur(4px);
-        border: 1px solid common.$primary-text;
-        border-radius: 0 0 50% 50%;
-        padding: 8px 16px 24px 16px;
-        margin-top: -3px;
+        border: 2px solid common.$primary-text;
+        border-top: none;
+        padding: 8px 16px;
         z-index: -1;
         max-width: 40vw;
         float: left;
