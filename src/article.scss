@@ -461,4 +461,5 @@ html, body {
     font-size: 1.6rem;
     border: 2px solid common.$accent;
     backdrop-filter: blur(4px);
+    box-shadow: 0 0 4px common.$accent;
   }
