@@ -54,7 +54,6 @@ main {
 
   right: 20px;
 
-
   @media screen and (min-width: 720px) {
     left:unset
   }
@@ -137,7 +136,7 @@ nav ul li a:hover {
 /* Hero section styles */
 .hero-sun {
   width: 100px;
-  margin-top: 7vh;
+  margin-top: 1vh;
   /* center and position fixed */
   position: fixed;
   z-index: -1;
@@ -145,7 +144,7 @@ nav ul li a:hover {
   right: auto;
 
   @media screen and (min-width: 480px) {
-    margin-top: 9vh;
+    margin-top: 7vh;
   }
 }
 
@@ -155,11 +154,11 @@ nav ul li a:hover {
   pointer-events: all;
   width: 100vw;
   z-index: 1;
-  min-height: 20vh;
+  min-height: 10vh;
   max-height: fit-content;
 
   @media screen and (min-width: 480px) {
-    min-height: 20vh;
+    min-height: 16vh;
   }
 
   h1, p {
@@ -188,15 +187,14 @@ nav ul li a:hover {
   }
 
   p {
-      padding-top: 7px;
+      padding-top: 1vh;
       margin-top: 56px;
       width: 100vw;
       letter-spacing: 2px;
       color: #e4ddd5;
-      top: 1vh;
+      top: 2.1vh;
 
       @media screen and (min-width: 480px) {
-        top: 3vh;
       }
     }
 }

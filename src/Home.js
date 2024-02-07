@@ -21,7 +21,7 @@ const App = () => {
       <Navbar openInitialState={true} />
       <div className="main">
         <HeroSection hideSun />
-        <img className="home-sun" src='./sun.gif' />
+        <img className="home-sun" src='./sun.gif' alt="Spinning sun logo"/>
         <h2 style={{textAlign: 'center'}}>this site is under construction</h2>
       </div>
     </div>
