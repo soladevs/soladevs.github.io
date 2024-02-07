@@ -24,7 +24,7 @@ From connecting with people of all ages, cultures and backgrounds, to driving co
 
 I have learned to navigate the unique complexities that arise with the diversity and freedom these communities offer. Each day different from the last, the role requires an eye for detail, good memory and plenty of patience. Teamwork is essential, requiring high levels of trust, clear communications and a strong personal sense of responsibility.         
 
-## personal
+### WIP TO BE CONTINUED
 
 
 
