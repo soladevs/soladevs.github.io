@@ -7,6 +7,7 @@ import HeroSection from './components/HeroSection';
 import './styles.scss';
 import './index.scss';
 import './article.scss';
+import './contact.scss';
 import ContactForm from './components/ContactForm';
 
 const Contact = () => {

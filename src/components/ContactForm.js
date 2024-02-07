@@ -1,21 +1,19 @@
 import React from 'react';
 
 const ContactForm = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here
-  };
-
   return (
     <section className="contact-form">
       <h2>Contact Me</h2>
-      <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Send</button>
+      <form action="https://formspree.io/f/mkndjkvz" method="post">
+        <label for="name">name</label>
+        <input name="Name" id="name" type="text" /> <br />
+        <label for="email">email</label> 
+        <input name="Email" id="email" type="email" /> <br />
+        <label for="message">message</label>
+        <input name="Message" id="message" type="text" /> <br />
+        <button type="submit">Submit</button>
       </form>
-    </section>
+    </section> 
   );
 };
 
