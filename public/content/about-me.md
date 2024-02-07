@@ -2,7 +2,7 @@
 
 hello! I'm "sola" - a developer / creative based in Manchester, UK.
 
-## professional 
+### professional 
 
 My professional experience lies in web development and user experience design, with over 4 years across various teams in the BBC - working on projects including CBeebies, CBBC, Newsround, Own It, News and Sport. 
 
