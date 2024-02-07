@@ -28,6 +28,7 @@ i++;
 
 ```
 
+
 It's easy.  It's not overly bloated, unlike HTML.  Also, as the creator of [markdown] says,
 
 > The overriding design goal for Markdown's
@@ -44,4 +45,4 @@ Ready to start writing?  Either start changing stuff on the left or
 [Marked]: https://github.com/markedjs/marked/
 [Markdown]: http://daringfireball.net/projects/markdown/
 
-![image](https://unsplash.it/720/360)
+![image](https://unsplash.it/720/360 "Image Caption")
