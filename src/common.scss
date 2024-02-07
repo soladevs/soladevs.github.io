@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: '';
-    src: local('Vee With A Marker'), url('./VeeWithAMarker-Regular.ttf') format('truetype');
+    src: src('./VeeWithAMarker-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: '';
-    src: local('LouisGeorgeCafe'), url('./LouisGeorgeCafe.ttf') format('truetype');
+    src: src('./LouisGeorgeCafe.ttf') format('truetype');
 }
 
 /* colour variables */
