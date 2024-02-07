@@ -378,12 +378,17 @@ html, body {
     position: absolute;
     top: 0;
     left: -6vw;
-    width: 125vw;
-    max-width: 170vw;
     min-height: 110vh;
-    max-height: 190vh;
+    max-height: 170vh;
     z-index: 1;
     filter: blur(16px) brightness(0.8);
+    width: 200vw;
+    left: -75vw;
+
+    @media screen and (min-width: 768px) {
+        width: 125vw;
+        max-width: 170vw;
+    }
 
   }
 
