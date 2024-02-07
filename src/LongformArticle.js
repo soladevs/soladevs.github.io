@@ -10,41 +10,22 @@ import './index.scss';
 import './article.scss';
 
 const LongformArticle = () => {
-  const [article, setArticle] = useState('');
-  const [meta, setMeta] = useState({});
-  const [backgroundImages, setBackgroundImages] = useState([]);
-  const [currentBackgroundIndex, setCurrentBackgroundIndex] = useState(0);
-
-  let { articleId } = useParams();
-
-  const articleSrc = '/content/' + articleId + '.md';
-  const articleMeta = '/content/' + articleId + '_meta.json';
+  const [galleryData, setGalleryData] = useState([]);
+  const [galleryIntro, setGalleryIntro] = useState([]);
+  const [galleryHeading, setGalleryHeading] = useState([]);
+  const [galleryCreationDate, setGalleryCreationDate] = useState([]);
 
   useEffect(() => {
     // Fetch article content
-    fetch(articleSrc)
-      .then((response) => response.text())
-      .then((text) => {
-        setArticle(text);
-      });
-
-    // Fetch article metadata
-    fetch(articleMeta)
+    fetch("/content/galleries/testgallery.json")
       .then((response) => response.json())
-      .then((json) => {
-        setMeta(json);
+      .then((data) => {
+        setGalleryHeading(data.heading);
+        setGalleryCreationDate(data["creation-date"]);
+        setGalleryIntro(data.introduction);
+        setGalleryData(data.images);
       });
-
-    // Fetch background images
-    Promise.all([
-      './content/article-images/2019-protest/1.jpg',
-      './content/article-images/2019-protest/2.jpg',
-      './content/article-images/2019-protest/3.jpg',
-      './content/article-images/2019-protest/4.jpg',
-    ]).then((images) => {
-      setBackgroundImages(images);
     });
-  }, [articleId]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,8 +48,6 @@ const LongformArticle = () => {
         (pos) => pos.top <= windowHeight * 0.25 + scrollPosition && pos.bottom >= windowHeight * -0.25 + scrollPosition
       );
     
-      // Set the current background index based on the article index
-      if (currentArticleIndex !== -1) setCurrentBackgroundIndex(currentArticleIndex);
     
       // Hide the header if it's off-screen
       if (header) {
@@ -95,18 +74,21 @@ const LongformArticle = () => {
       <div className="main article">
         <HeroSection />
         <div className="lf_article-container">
-          {backgroundImages.map((image, index) => (
-            <div
-              key={`background-${index}`}
-              className={`background-image ${index === currentBackgroundIndex ? 'visible' : ''}`}
-              style={{ backgroundImage: `url(${image})` }}
-            />
-          ))}
-          {[...Array(4)].map((_, index) => (
-            <div key={`article-content-${index}`} className="lf_article-body">
-              <ReactMarkdown>{article}</ReactMarkdown>
+          <h1 className="gallery-heading">{galleryHeading}</h1>
+          <p className="gallery-intro">{galleryIntro}</p>
+          <p className="gallery-creation-date">{galleryCreationDate}</p>
+          {galleryData.map((item, index) => (
+          <div className="gallery-item" key={index}>
+            <div className="gallery-image-container">
+              <img className={"gallery-image gallery-image-" + index} src={item.url} alt={item.alt} /> 
+              <img className={"gallery-image-blurred"} src={item.url} alt={item.alt} />
             </div>
-          ))}
+            <div>
+              <h2 className="gallery-title">{item.title}</h2>
+              <p className="gallery-description">{item.description}</p>
+            </div>
+          </div>
+        ))}
         </div>
          
       </div>
