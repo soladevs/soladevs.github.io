@@ -28,6 +28,8 @@ const App = () => {
 
 const container = document.getElementById('root');
 const root = createRoot(container);
+document.querySelector('meta[name="viewport"]').setAttribute('content', 'minimal-ui');
+
 root.render(
   <HashRouter>
     <App />
