@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.ba6fbae3.css",
+    "main.css": "/static/css/main.2dec103f.css",
     "main.js": "/static/js/main.d7d560b2.js",
     "static/media/LouisGeorgeCafe.ttf": "/static/media/LouisGeorgeCafe.eacd87871e9a39013626.ttf",
     "static/media/VeeWithAMarker-Regular.ttf": "/static/media/VeeWithAMarker-Regular.afa97d0a845e5df6c51d.ttf",
     "index.html": "/index.html",
-    "main.ba6fbae3.css.map": "/static/css/main.ba6fbae3.css.map",
+    "main.2dec103f.css.map": "/static/css/main.2dec103f.css.map",
     "main.d7d560b2.js.map": "/static/js/main.d7d560b2.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba6fbae3.css",
+    "static/css/main.2dec103f.css",
     "static/js/main.d7d560b2.js"
   ]
 }
