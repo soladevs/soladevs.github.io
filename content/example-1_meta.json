@@ -1,10 +1,10 @@
 {
-    "heading": "Preview: A live display of the generated HTML",
+    "heading": "Five of the greatest things you can do that aren't illegal yet",
     "subheading": "One of the advantages of React is that you can quickly generate HTML chunks using the JSX template system.",
-    "promo-image": "./content/article-images/f.jpg",
+    "promo-image": "https://unsplash.it/2000/1200/?random",
     "promo-image-alt": "Alt text",
     "section": "Coding",
-    "creation-date": "2022-22-22",
-    "last-updated": "2022-22-22",
+    "creation-date": "2023-07-06",
+    "last-updated": "2024-02-15",
     "url-slug": "example-1"
   }
