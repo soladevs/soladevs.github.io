@@ -60,6 +60,7 @@
     padding: 4px;
     height: 35vh;
     width: 75vw;
+    margin-bottom: 4px;
 
     @media screen and (min-width: 768px) {
         height: 23vh;
@@ -85,6 +86,7 @@
     border: 2px solid common.$accent;
     backdrop-filter: blur(4px);
     box-shadow: 0 0 4px common.$accent;
+    margin-bottom: 64px;
   }
   
   .contact-form button:hover {
