@@ -1,0 +1,38 @@
+{
+    "heading": "Five of the greatest things you can do that aren't illegal yet",
+    "subheading": "One of the advantages of React is that you can quickly generate HTML chunks using the JSX template system.",
+    "introduction": "If I could write enough placeholder text to fill this page I'd be both impressed and impressively bored",
+    "promo-image": "https://unsplash.it/2000/1200/?random",
+    "promo-image-alt": "Alt text",
+    "section": "Coding",
+    "creation-date": "2023-07-06",
+    "last-updated": "2024-02-15",
+    "url-slug": "example-1",
+    "images": [
+        {
+            "url": "https://media.discordapp.net/attachments/822502238340775956/1204640935602823178/IMG_4127.jpg?ex=65d5784c&is=65c3034c&hm=c942ac8d0aafd7a76c6230b0a5c7c049e1191c0ced0f43a36a34909e0397753c&=&format=webp&width=853&height=640",
+            "alt": "Alt text",
+            "title": "Placeholder",
+            "description": "PlaceholderPlaceholderPlaceholder Placeholder"
+        },
+        {
+            "url": "https://media.discordapp.net/attachments/807280381903765534/1203812486906781778/IMG_4058.jpg?ex=65d274be&is=65bfffbe&hm=0eebaf4243ca37ec4901fff3cb0418b68d9f2daf04398c06e981a0b4efa1bdb2&=&format=webp&width=853&height=640",
+            "alt": "Alt text",
+            "title": "Placeholder",
+            "description": "PlaceholderPlaceholderPlaceholder Placeholder"
+        },
+        {
+            "url": "https://media.discordapp.net/attachments/822502238340775956/1204640930947268639/IMG_4033.jpg?ex=65d5784b&is=65c3034b&hm=ab81e1c85ebea57aa0234ead5e19b1d6a61abd70c728272f171fa4d18c964338&=&format=webp&width=853&height=640",
+            "alt": "Alt text",
+            "title": "Placeholder",
+            "description": "PlaceholderPlaceholderPlaceholder Placeholder"
+        },
+        {
+            "url": "https://media.discordapp.net/attachments/822502238340775956/1204640932713078844/IMG_4061.jpg?ex=65d5784b&is=65c3034b&hm=014512b5948942c5c2027705ce78279040e1bd9bd6e3152f219440d22ecb6318&=&format=webp&width=853&height=640",
+            "alt": "Alt text",
+            "title": "Placeholder",
+            "description": "PlaceholderPlaceholderPlaceholder Placeholder"
+        }
+        
+    ]
+  }
