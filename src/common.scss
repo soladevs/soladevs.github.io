@@ -1,13 +1,13 @@
 /* fonts */
 
 @font-face {
-    font-family: '';
-    src: src('./VeeWithAMarker-Regular.ttf') format('truetype');
+    font-family: 'VeeWithAMarker';
+    src: url('./VeeWithAMarker-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: '';
-    src: src('./LouisGeorgeCafe.ttf') format('truetype');
+    font-family: 'LouisGeorgeCafe';
+    src: url('./LouisGeorgeCafe.ttf') format('truetype');
 }
 
 /* colour variables */

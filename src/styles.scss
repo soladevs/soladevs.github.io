@@ -4,16 +4,11 @@ F0544Fffb321e67b34
 
 @use 'common.scss';
 
-@font-face {
-  font-family: '';
-  src: src('./VeeWithAMarker-Regular.ttf') format('truetype');
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Vee With A Marker';/*'Vee With A Marker';*/
+  font-family: 'VeeWithAMarker';/*'VeeWithAMarker';*/
 }
 
 body {
