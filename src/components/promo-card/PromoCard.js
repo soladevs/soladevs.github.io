@@ -1,5 +1,5 @@
 import React from 'react';
-import './promo-card.css';
+import './promo-card.scss';
 
 
 const PromoCard = ({ imageSrc, headline, summary, destinationUrl, date }) => {

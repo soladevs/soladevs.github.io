@@ -40,7 +40,7 @@ html, body {
 
         &:hover {
             font-size: 1.6rem;
-            border: 1px solid #ffb321;
+            border: 1px solid common.$accent;
             padding-bottom: 2px;
             &::after {
                 content: " >";

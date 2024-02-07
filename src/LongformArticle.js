@@ -64,7 +64,7 @@ const LongformArticle = () => {
     
       // Determine the index of the article section that is mostly in view
       const currentArticleIndex = articlePositions.findIndex(
-        (pos) => pos.top <= windowHeight * 0.25 + scrollPosition && pos.bottom >= windowHeight * 0.25 + scrollPosition
+        (pos) => pos.top <= windowHeight * 0.25 + scrollPosition && pos.bottom >= windowHeight * -0.25 + scrollPosition
       );
     
       // Set the current background index based on the article index
