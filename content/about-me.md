@@ -18,7 +18,7 @@ In my spare time, you'll often catch me working on side projects or prototypes t
 
 ### community management
 
-In my free time, I've spent around 6 years managing large online communities. 
+I've spent around 6 years managing complex online communities. 
 
 From connecting with people of all ages, cultures and backgrounds, to driving community engagement and change and all of the more personal aspects of community management, to say it has been a lifechanging experience would sell it short. 
 
