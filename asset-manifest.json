@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.33c8eafa.css",
+    "main.css": "/static/css/main.5c274067.css",
     "main.js": "/static/js/main.d60317e7.js",
     "static/media/VeeWithAMarker-Regular.ttf": "/static/media/VeeWithAMarker-Regular.afa97d0a845e5df6c51d.ttf",
     "index.html": "/index.html",
-    "main.33c8eafa.css.map": "/static/css/main.33c8eafa.css.map",
+    "main.5c274067.css.map": "/static/css/main.5c274067.css.map",
     "main.d60317e7.js.map": "/static/js/main.d60317e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.33c8eafa.css",
+    "static/css/main.5c274067.css",
     "static/js/main.d60317e7.js"
   ]
 }
