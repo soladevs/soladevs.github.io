@@ -80,12 +80,12 @@ const LongformArticle = () => {
           {galleryData.map((item, index) => (
           <div className="gallery-item" key={index} style={{zIndex: index}}>
             <div className="gallery-image-container">
-              <img className={"gallery-image gallery-image-" + index} src={item.url} alt={item.alt} style={{zIndex: index+1}} /> 
+              <img className={"gallery-image gallery-image-" + index} src={item.url} alt={item.alt} style={{zIndex: index+2}} /> 
               <img className={"gallery-image-blurred"} src={item.url} alt={item.alt} style={{zIndex: index}} />
             </div>
             <div>
-              <h2 className="gallery-title" style={{zIndex: index}}>{item.title}</h2>
-              <p className="gallery-description" style={{zIndex: index}}>{item.description}</p>
+              <h2 className="gallery-title" style={{zIndex: index+1}}>{item.title}</h2>
+              <p className="gallery-description" style={{zIndex: index+1}}>{item.description}</p>
             </div>
           </div>
         ))}
