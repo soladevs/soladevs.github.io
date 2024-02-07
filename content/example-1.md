@@ -46,3 +46,4 @@ Ready to start writing?  Either start changing stuff on the left or
 [Markdown]: http://daringfireball.net/projects/markdown/
 
 ![image](https://unsplash.it/720/360 "Image Caption")
+*The view of an unknown image, 2023. Photo not mine.*
