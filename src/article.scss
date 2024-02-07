@@ -3,7 +3,7 @@
 html, body {
     position: relative;
     overflow-x: hidden!important;
-    opacity: 0.99;
+    z-index: 0;
 }
 
 .main {
