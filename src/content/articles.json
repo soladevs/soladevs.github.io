@@ -1,62 +1,22 @@
 [
   {
-    "heading": "Guide: How to do that thing you really want to do but can't",
-    "subheading": "Take some tips from a professional do-er of things. Get those things done.",
+    "heading": "Regular Article Example Page",
+    "subheading": "Page for testing purposes",
     "promo-image": "https://unsplash.it/350/350/?random",
     "promo-image-alt": "Alt text",
     "section": "Coding",
     "creation-date": "2022-01-01",
     "last-updated": "2022-01-01",
-    "url-slug": "example-1"
+    "url-slug": "/#writing/example-1"
   },
   {
-    "heading": "Mosquito party? Try the new trend we're dying to be a part of",
-    "subheading": "And catch a sneak peek of next weeks episode as we rave in a bat cave.",
+    "heading": "Gallery Example Page",
+    "subheading": "Page for testing purposes",
     "promo-image": "https://unsplash.it/300/300/?random",
     "promo-image-alt": "Alt text",
     "section": "Coding",
     "creation-date": "2022-01-01",
     "last-updated": "2022-01-01",
-    "url-slug": "example-1"
-  },
-  {
-    "heading": "How to deal with several disgruntled turtles - a foolproof guide",
-    "subheading": "Simply leaving is often the easiest solution. They are notoriously fierce debaters.",
-    "promo-image": "https://unsplash.it/400/400/?random",
-    "promo-image-alt": "Alt text",
-    "section": "Coding",
-    "creation-date": "2022-01-01",
-    "last-updated": "2022-01-01",
-    "url-slug": "example-1"
-  },
-  {
-    "heading": "Placeholder",
-    "subheading": "Create React App Sample",
-    "promo-image": "https://unsplash.it/600/300/?random",
-    "promo-image-alt": "Alt text",
-    "section": "Thoughts",
-    "creation-date": "2022-01-01",
-    "last-updated": "2022-01-01",
-    "url-slug": "example-1"
-  },
-  {
-    "heading": "Placeholder",
-    "subheading": "Create React App Sample",
-    "promo-image": "https://unsplash.it/1000/700/?random",
-    "promo-image-alt": "Alt text",
-    "section": "Thoughts",
-    "creation-date": "2022-01-01",
-    "last-updated": "2022-01-01",
-    "url-slug": "example-1"
-  },
-  {
-    "heading": "Placeholder",
-    "subheading": "Create React App Sample",
-    "promo-image": "https://unsplash.it/500/500/?random",
-    "promo-image-alt": "Alt text",
-    "section": "Personal",
-    "creation-date": "2022-01-01",
-    "last-updated": "2022-01-01",
-    "url-slug": "example-1"
+    "url-slug": "/#gallery/test-gallery"
   }
 ]

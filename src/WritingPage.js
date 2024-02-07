@@ -37,7 +37,7 @@ const WritingPage = () => {
                     key={article.id} 
                     headline={article.heading}
                     summary={article.subheading}
-                    destinationUrl={"/#writing/" + article['url-slug']}
+                    destinationUrl={article['url-slug']}
                     imageSrc={article['promo-image']}
                     date={article['creation-date']}
                   />
