@@ -243,7 +243,7 @@ html, body {
   }
   
   .lf_article-container {
-    background: radial-gradient(circle, rgb(105, 136, 208) 0%, rgb(105, 136, 208) 65%, rgb(129, 151, 202) 100%);
+    backdrop-filter: blur(4px);
     position: relative;
     padding-top: 32px;
     padding-bottom: 96px;
@@ -258,6 +258,100 @@ html, body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 2;
+    padding-bottom: 96px;
+    font-size: 1.2rem;
+    max-width: 90%;
+
+    @media screen and (min-width: 1024px) {
+        max-width: 80%;
+    }
+
+    @media screen and (min-width: 1440px) {
+        max-width: 70%;
+    }
+
+    a {
+        color: common.$offwhite;
+
+        &:hover {
+            color: common.$accent;
+        }
+    }
+
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'LouisGeorgeCafe';
+        padding-bottom: 8px;
+        padding-top: 16px;
+        color: common.$accent;
+    }
+
+    h1 {
+        font-size: 3rem;
+    } 
+    
+    h2 {
+        margin-top: 24px;
+        margin-bottom: 8px;
+    }
+
+    img {
+       max-width: 90vw;
+       margin-top: 16px;
+       border: 2px solid common.$primary-text;
+       border-radius: 16px 32px 16px 0px;
+       display:block;
+       z-index: 2;
+    }
+    
+    em {
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-style: normal;
+        text-decoration: none;
+        text-align: center;
+        backdrop-filter: blur(4px);
+        border: 2px solid common.$primary-text;
+        border-top: none;
+        padding: 8px 16px;
+        z-index: -1;
+        max-width: 40vw;
+        float: left;
+        font-size: 1.2rem;
+        
+    }
+
+    pre {
+      border: 2px solid common.$primary-text;
+      border-radius: 16px;
+      padding: 4px 8px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      max-width: 70vw;
+
+      code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+      }
+    }
+
+    blockquote {
+        font-style: italic;
+        padding: 8px 16px;
+        margin-bottom: 48px;
+        max-width: 70vw;
+
+        &::before {
+            content: "“";
+            font-size: 4rem;
+        }
+        &::after {
+            content: "”";
+            float: right;
+            font-size: 4rem;
+        }
+    }
   }
 
   .gallery-item {
@@ -271,7 +365,7 @@ html, body {
   
   .gallery-image {
     width: 80%;
-    max-width: 960px;
+    max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -283,8 +377,11 @@ html, body {
   .gallery-image-blurred {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 101%;
+    left: -2vw;
+    width: 115vw;
+    max-width: 170vw;
+    min-height: 120vh;
+    max-height: 200vh;
     z-index: 1;
     filter: blur(16px) brightness(0.8);
 
@@ -316,10 +413,10 @@ html, body {
     margin-top: 32px;
     margin-bottom: 16px;
 
-    font-size: 3rem;
+    font-size: 3.5rem;
 
     @media screen and (min-width: 768px) {
-        font-size: 4rem;
+        font-size: 5rem;
     }
   }
 
@@ -341,6 +438,21 @@ html, body {
 
   .gallery-description {
     font-family: 'LouisGeorgeCafe';
-    margin-bottom: 15vh;
-    padding-bottom: 8vh;
+    padding-bottom: 20vh;
+  }
+
+  .lf-button_return {
+    display: block;
+    position: relative;
+    background-color: transparent;
+    color: common.$accent;
+    margin-top: 12vh;
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index:99;
+    user-select: none;
+    font-size: 1.6rem;
+    border: 2px solid common.$accent;
+    backdrop-filter: blur(4px);
   }

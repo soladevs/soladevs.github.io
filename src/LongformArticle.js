@@ -89,8 +89,8 @@ const LongformArticle = () => {
             </div>
           </div>
         ))}
+        <button className="lf-button_return" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth'  })}>Return to top</button>
         </div>
-         
       </div>
     </div>
   );
