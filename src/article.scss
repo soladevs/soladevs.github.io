@@ -365,7 +365,6 @@ html, body {
   }
   
   .gallery-image {
-    width: 80%;
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
@@ -373,6 +372,12 @@ html, body {
     position: relative;
     z-index: 3;
     border: 1px solid common.$primary-text;
+
+    width: 95%;
+
+    @media screen and (min-width: 768px) {
+        width: 85%;
+    }
   }
   
   .gallery-image-blurred {
@@ -444,7 +449,7 @@ html, body {
 
   .gallery-description {
     font-family: 'LouisGeorgeCafe';
-    padding-bottom: 20vh;
+    min-height: 35vh;
   }
 
   .lf-button_return {
