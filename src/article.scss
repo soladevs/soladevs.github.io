@@ -253,7 +253,6 @@ html, body {
     margin-bottom: 120vh;
     padding-left: 20vw;
     padding-right: 20vw;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 2;
     padding-bottom: 96px;
@@ -267,6 +266,29 @@ html, body {
     @media screen and (min-width: 1440px) {
         max-width: 70%;
     }
+}
+
+.about-body {
+    backdrop-filter: blur(4px);
+    max-width: 45vw;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    * {
+        font-family: 'LouisGeorgeCafe'!important;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+        margin-bottom: 16px;
+    }
+}
+
+.lf_article-body, .about-body {
 
     a {
         color: common.$offwhite;

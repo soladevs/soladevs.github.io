@@ -16,7 +16,7 @@ Feedback, especially critiscism, drives me.
 
 In my spare time, you'll often catch me working on side projects or prototypes to push myself and test new ideas.    
 
-## community manager
+### community management
 
 In my free time, I've spent around 6 years managing large online communities. 
 
