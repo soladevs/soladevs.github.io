@@ -41,7 +41,7 @@ const Article = () => {
       <div className="main article">
         <HeroSection />
         <div className="article-heading">
-          <img src={meta['promo-image']} alt={meta['promo-image-alt']}/>
+          <img style={{backgroundImage: `url(${meta['promo-image']})`}}></img>
           <div className='article-heading-wrapper'>
             <div className='article-heading-container'>
               <div className='article-text-invert' style={{'backgroundImage': `url(${meta['promo-image']})`}}>
