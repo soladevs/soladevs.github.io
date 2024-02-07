@@ -71,7 +71,7 @@ main {
   user-select: none;
   font-size: 2rem;
   border: 2px solid common.$accent;
-  
+  backdrop-filter: blur(4px);
 
   @media screen and (min-width: 720px) {
     left: 120px;
