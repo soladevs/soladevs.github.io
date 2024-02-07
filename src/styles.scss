@@ -1,29 +1,40 @@
+/* old colors 
+F0544Fffb321e67b34
+*/
+
+@use 'common.scss';
+
 @font-face {
-  font-family: 'MomsTypewriter';
-  src: local('MomsTypewriter'), url('./MomsTypewriter.ttf') format('truetype');
+  font-family: '';
+  src: local('Vee With A Marker'), url('./VeeWithAMarker-Regular.ttf') format('truetype');
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'MomsTypewriter';/*'Vee With A Marker';*/
+  font-family: 'Vee With A Marker';/*'Vee With A Marker';*/
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #111111;
-  color: #e4ddd5;
+  background: radial-gradient(circle, rgba(105,136,208,1) 0%, rgb(129, 151, 202) 100%); 
+  background-color: common.$background;
+  color: #f5f2ef;
 }
 
-a {
-  color: #F0544F;
+.home-sun {
+  /* center image */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100vw;
+  max-height: 70vh;
 }
 
 section {
   margin-top: 32px;
   padding-bottom: 8px;
-  border-bottom: 1px solid #3A3335;
 }
 
 /* Basic layout styles */
@@ -40,10 +51,8 @@ main {
 
 /* Navbar styles */
 .navigation, .nav-toggle {
-  background-color: #111111;
-  color: #C5BEB6;
+  color: common.$accent;
   padding: 10px;
-  border: 1px solid #3A3335;
   position: fixed;
   z-index: 1;
   letter-spacing: 2px;
@@ -66,7 +75,7 @@ main {
   z-index:99;
   user-select: none;
   font-size: 1.2rem;
-  box-shadow: 0 0 5px #e4ddd5;
+  box-shadow: 0 0 5px common.$accent;
 
   @media screen and (min-width: 720px) {
     left: 120px;
@@ -77,38 +86,48 @@ main {
     cursor: pointer;
     font-size: 1.6rem;
     transform: scale(1.4);
-    color: #F0544F;
-    border-color: #F0544F;
-    box-shadow: 0 0 5px #F0544F;
+    color: #ffb321;
+    border-color: #ffb321;
+    box-shadow: 0 0 5px #ffb321;
 }
 }
 
 nav ul {
   list-style: none;
   display: block;
+  backdrop-filter: blur(4px);
+  border-radius: 16px;
+  padding: 8px;
 }
 
 nav ul li {
   margin-right: 10px;
+
+  &:before {
+    content: '>';
+    margin-right: 10px;
+  }
 }
 
 nav ul li a {
-  color: #e4ddd5;
+  color: common.$accent;
   font-size: 3rem;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
 }
 
 nav ul li a:hover {
   font-size: 4rem;
-  color: #F0544F;
-  border: 1px solid #F0544F;
-  background-color: #111111;
+  color: #ffb321;
 }
 
 /* Footer */
-.footer {
-  background-color: #F0544F;
-  padding: 20px;
-  text-align: center;
+.footer-space {
+  min-height: 100vh;
 }
 
 /* Hero section styles */
@@ -118,18 +137,60 @@ nav ul li a:hover {
   pointer-events: all;
   margin-top: -8.5vh;
   width: 100vw;
+  display: inline-flex;
 }
 
-.hero h1 {
-  font-size: 4rem;
-  letter-spacing: 2px;
-  text-decoration: underline;
-  width: 100vw;
+
+
+.hero-sun {
+  max-height: 20%;
+  width: auto;
+  position: fixed;
+  top: 2vh;
+
+  display: none;
+
+  @media screen and (min-width: 620px) {
+    display: inline-flex;
+  }
 }
 
-.hero p {
-  letter-spacing: 2px;
-  color: #e4ddd5;
+.hero {
+  h1, p {
+      position: fixed;
+      z-index: -1;
+      left: 50%;
+      top: 8vh;
+      transform: translate(-50%, -50%);
+      
+  }
+
+  h1 {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      margin: 0;
+      color: common.$accent;
+      letter-spacing: 2px;
+      width: 100vw;
+      font-size: 2.7rem; 
+
+      @media screen and (min-width: 720px) {
+        font-size: 4rem;
+      }
+  }
+
+  p {
+      padding-top: 7px;
+      margin-top: 56px;
+      padding-bottom: 8px;
+      width: 100vw;
+      letter-spacing: 2px;
+      color: #e4ddd5;
+  }
+
+  z-index: -1;
+  min-height: 24vh;
+  max-height: fit-content;
 }
 
 /* About me section styles */
@@ -194,32 +255,32 @@ main {
 .articles-container, .projects-container {
   margin-left: 10%;
   padding-bottom: 16px;
-  border-bottom: 2px dashed #3A3335;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(333px, 1fr));
   gap: 8px;
 
   div {
     p,a  {
-      color: #e4ddd5;
+      color: common.$primary-text;
       text-decoration: none;
     }
   }
 
   .promo-card_headline {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     letter-spacing: normal;
   }
 
   .promo-card_summary {
     font-size: 1.2rem;
-    font-family: 'Source Code Pro';
-    letter-spacing: -1px;
+    font-family: 'LouisGeorgeCafe';
+    letter-spacing: 0px;
   }
 
   .promo-card_content {
     padding-left: 0;
     padding-bottom: 48px;
+    font-family: 'LouisGeorgeCafe';
 
     @media screen and (min-width: 720px) {
       padding-bottom: 8px;
@@ -229,9 +290,11 @@ main {
 
   .promo-card_read-more {
     text-decoration: underline;
+    font-size: 1.2rem;
 
     &:hover {
       transform:scale(1.6);
+      border: none;
     }
   }
 
@@ -264,7 +327,7 @@ main {
 }
 
 .PortfolioItem__description {
-  font-family: 'Source Code Pro';
+  font-family: 'LouisGeorgeCafe';
   font-size: 1.2rem;
   letter-spacing: -1px;
   margin-bottom: 16px;
@@ -279,8 +342,8 @@ main {
 
   &:hover {
     cursor: pointer;
-    color: #F0544F;
-    box-shadow: 0 0 5px #F0544F;
+    color: #ffb321;
+    box-shadow: 0 0 5px #ffb321;
     text-decoration: underline;
   }
 

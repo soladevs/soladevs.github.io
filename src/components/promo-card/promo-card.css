@@ -8,16 +8,16 @@
 }
 
 .promo-card_container:hover {
-    color: #F0544F!important;
+    color: #ffb321!important;
 
     & .promo-card_image {
-        box-shadow: 4px 4px 0px #F0544F;
+        box-shadow: 4px 4px 0px #ffb321;
     }
 }
 
 .promo-card_read-more:hover {
-    color: #F0544F;
-    border: 1px solid #F0544F;
+    color: #ffb321;
+    border: 1px solid #ffb321;
 }
 
 .promo-card_container {
@@ -41,12 +41,12 @@
 }
 
 .promo-card_headline {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin-bottom: 4px;
 }
 
 .promo-card_summary {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     margin-bottom: 16px;
 }
 

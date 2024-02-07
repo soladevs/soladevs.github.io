@@ -4,8 +4,6 @@ import ReactMarkdown from 'react-markdown';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import CursorLines from './CursorLines';
-import NoiseImage from './NoiseImage';
 
 import './styles.scss';
 import './index.scss';
@@ -93,8 +91,6 @@ const LongformArticle = () => {
 
   return (
     <div>
-      <CursorLines />
-      <NoiseImage />
       <Navbar openInitialState={false} />
       <div className="main article">
         <HeroSection />

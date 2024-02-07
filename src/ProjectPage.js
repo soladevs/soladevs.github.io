@@ -4,8 +4,6 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import PortfolioItem from './components/PortfolioItem';
-import CursorLines from './CursorLines';
-import NoiseImage from './NoiseImage';
 
 import './index.scss';
 import './styles.scss';
@@ -23,8 +21,6 @@ const ProjectPage = () => {
 
   return (
     <div>
-      <CursorLines />
-      <NoiseImage />
       <Navbar openInitialState={false}/>
       <div className="main">
         <HeroSection />
@@ -55,11 +51,6 @@ const ProjectPage = () => {
           ))}
       </section>
       </main>
-      <section className="splash-section">
-        <div className="splash-container"> 
-          <span className='splash-questionmark flip'>?</span>
-          <span className='splash-questionmark'>?</span>
-        </div></section>
       </div>
     </div>
   );

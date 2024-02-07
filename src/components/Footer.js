@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>© {new Date().getFullYear()} My Website. All rights reserved.</p>
+      <div className='footer-space'> </div>
     </footer>
   );
 };

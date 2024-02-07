@@ -1,42 +1,11 @@
+@use 'common.scss';
+
 html, body {
     position: relative;
     overflow-x: hidden!important;
 }
 
-.hero {
-    h1, p {
-        position: fixed;
-        z-index: -1;
-        left: 50%;
-        top: 5vh;
-        transform: translate(-50%, -50%);
-    }
 
-    h1 {
-        padding-top: 8px;
-        padding-bottom: 8px;
-        margin: 0;
-    }
-
-    p {
-        padding-top: 7px;
-        margin-top: 56px;
-        padding-bottom: 8px;
-        width: 100vw;
-    }
-
-    z-index: -1;
-    height: 24vh;
-
-    @media screen and (min-width: 720px) {
-        height: 16vh;
-
-    }
-}
-
-.article .splash-questionmark {
-    top: 75vh;
-}
 
 .main {
     margin-top: 10vh;
@@ -47,7 +16,7 @@ html, body {
 }
 
 .article-body {
-    background-color: #111111;
+    background-color: #6988d0;
     padding-left: 10vw;
     text-align: left;
     width: 100vw;
@@ -62,7 +31,7 @@ html, body {
     
     line-height: 1.2;
     font-size: 1rem;
-    color: #e4ddd5;
+    color: common.$offwhite;
 
     * {
         font-family: 'Verdana', sans-serif;
@@ -73,7 +42,7 @@ html, body {
 
         &:hover {
             font-size: 1.6rem;
-            border: 1px solid #F0544F;
+            border: 1px solid #ffb321;
             padding-bottom: 2px;
             &::after {
                 content: " >";
@@ -101,7 +70,7 @@ html, body {
         min-height: 65vh;
         position: fixed;
         z-index: -1;
-        filter: contrast(0.5) brightness(0.8) saturate(1);
+        filter: contrast(0.7) brightness(0.8) saturate(1);
         overflow: hidden;
     }
 
@@ -115,7 +84,7 @@ html, body {
         -webkit-text-fill-color: transparent;
         background-size: cover;
         width: 100vw;
-        filter: invert(1) hue-rotate(0deg) contrast(2.5) saturate(1.4) brightness(2) drop-shadow(0 0 1px black);
+        filter: invert(1) hue-rotate(0deg) contrast(2) saturate(1.4) brightness(1.5) drop-shadow(0 0 1px rgba(0,0,0,0.4));
         position: fixed;
         z-index: 12;
         padding-left: 5vw;
@@ -126,12 +95,16 @@ html, body {
     h1 { 
         display: block;
         text-align: right;
-        padding-top: 16px;
         margin-left: 20vw;
-        font-size: 2.2rem;
+        font-size: 2rem;
+        font-family: 'Vee With A Marker';
 
-        @media screen and (min-width: 280px) {
-            font-size: 2.7rem;
+        @media screen and (min-width: 320px) {
+            font-size: 2rem;
+        }
+
+        @media screen and (min-width: 480px) {
+            font-size: 2.3rem;
         }
 
         @media screen and (min-width: 720px) {
@@ -139,7 +112,7 @@ html, body {
         }
 
         @media screen and (min-width: 1024px) {
-            font-size: 4.2rem;
+            font-size: 4rem;
         }
     }
 
@@ -172,8 +145,11 @@ html, body {
     }
 
     h1 {
-        padding-top: 16px;
+        padding-top: 32px;
         padding-bottom: 8px;
+        font-size: 3rem;
+        color: common.$accent;
+        font-family: 'Vee With A Marker';
     } 
     
     h2 {
@@ -184,12 +160,16 @@ html, body {
     img {
        max-width: 80vw;
        margin-top: 16px;
-       border: 4px solid #e4ddd5;
+       border: 2px solid common.$accent;
+       border-radius: 16px 32px 1px 16px;
        margin-bottom: 16px;
+       display:block;
+       margin-left: auto;
+       margin-right: auto;
     }
 
     pre {
-      border: 4px solid #e4ddd5;
+      border: 4px solid common.$accent;
       border-radius: 4px;
       padding: 4px 8px;
       margin-top: 8px;
@@ -199,6 +179,10 @@ html, body {
       code {
         font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
       }
+    }
+
+    a {
+        color: common.$offwhite;
     }
 }
 
@@ -230,7 +214,7 @@ html, body {
     padding-top: 10vh;
     padding-bottom: 10vh;
     margin-bottom: 120vh;
-    background-color: #111111;
+    background-color: common.$background;
     padding-left: 20vw;
     padding-right: 20vw;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);

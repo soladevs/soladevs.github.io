@@ -1,7 +1,7 @@
 [
   {
-    "heading": "Article Name",
-    "subheading": "One of the advantages of React is that you can quickly generate HTML chunks using the JSX template system.",
+    "heading": "Guide: How to do that thing you really want to do but can't",
+    "subheading": "Take some tips from a professional do-er of things. Get those things done.",
     "promo-image": "https://unsplash.it/350/350/?random",
     "promo-image-alt": "Alt text",
     "section": "Coding",
@@ -10,8 +10,8 @@
     "url-slug": "example-1"
   },
   {
-    "heading": "Placeholder",
-    "subheading": " Looping and presenting the data is a ubiquitous part of building apps with React.",
+    "heading": "Mosquito party? Try the new trend we're dying to be a part of",
+    "subheading": "And catch a sneak peek of next weeks episode as we rave in a bat cave.",
     "promo-image": "https://unsplash.it/300/300/?random",
     "promo-image-alt": "Alt text",
     "section": "Coding",
@@ -20,8 +20,8 @@
     "url-slug": "example-1"
   },
   {
-    "heading": "Placeholder",
-    "subheading": "Create React App Sample",
+    "heading": "How to deal with several disgruntled turtles - a foolproof guide",
+    "subheading": "Simply leaving is often the easiest solution. They are notoriously fierce debaters.",
     "promo-image": "https://unsplash.it/400/400/?random",
     "promo-image-alt": "Alt text",
     "section": "Coding",

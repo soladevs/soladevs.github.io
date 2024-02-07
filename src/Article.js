@@ -1,12 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import PortfolioItem from './components/PortfolioItem';
-import CursorLines from './CursorLines';
-import NoiseImage from './NoiseImage';
 
 import './styles.scss';
 import './index.scss';
@@ -21,28 +19,24 @@ const Article = () => {
     const articleSrc = '/content/' + articleId + '.md';
     const articleMeta = '/content/' + articleId + '_meta.json';
 
-    fetch(articleSrc)
-    .then(response => {
-      return response.text()
-    })
-    .then(text => {
-      console.log(text);
-      setArticle(text);
-    });
-
-    fetch(articleMeta).then(response => {
-      return response.json();
-    }).then(json => {
-      console.log(json);
-      setMeta(json);
-    })
+    useEffect(() => {
+      fetch(articleSrc)
+        .then(response => response.text())
+        .then(text => {
+          setArticle(text);
+        });
+    
+      fetch(articleMeta)
+        .then(response => response.json())
+        .then(json => {
+          setMeta(json);
+        });
+    }, []);
 
     console.log(meta);
 
   return (
     <div>
-      <CursorLines />
-      <NoiseImage />
       <Navbar openInitialState={false} />
       <div className="main article">
         <HeroSection />
@@ -69,11 +63,7 @@ const Article = () => {
             <ReactMarkdown>{article}</ReactMarkdown>
           </div>
       </section>
-      <section className="splash-section">
-        <div className="splash-container"> 
-          <span className='splash-questionmark flip'>?</span>
-          <span className='splash-questionmark'>?</span>
-        </div></section>
+      <Footer />
       </div>
     </div>
   );

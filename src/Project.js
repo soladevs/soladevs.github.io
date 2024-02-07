@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import CursorLines from './CursorLines';
-import NoiseImage from './NoiseImage';
 
 import './index.scss';
 import './styles.scss';
@@ -58,8 +56,6 @@ const Project = () => {
 
   return (
     <div>
-      <CursorLines />
-      <NoiseImage />
       <Navbar openInitialState={false}/>
       <div className="main">
         <HeroSection />
@@ -143,14 +139,7 @@ const Project = () => {
           </div>
         </div>
         </main>
-        <section className="splash-section">
-          <div className="splash-container">
-            <span className="splash-questionmark flip">?</span>
-            <span className="splash-questionmark">?</span>
-          </div>
-         
-        </section>
-      </div>
+        </div>
     </div>
   );
 };

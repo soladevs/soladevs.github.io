@@ -11,7 +11,6 @@ import ContactInfo from './components/ContactInfo';
 import ContactForm from './components/ContactForm';
 import SkillsSection from './components/SkillsSection';
 import NoiseGenerator from './NoiseGenerator';
-import NoiseImage from './NoiseImage';
 
 import './styles.scss';
 import CursorLines from './CursorLines';
@@ -19,17 +18,11 @@ import CursorLines from './CursorLines';
 const App = () => {
   return (
     <div>
-      <CursorLines />
-      <NoiseImage />
       <Navbar openInitialState={true}/>
       <div className="main">
-        <HeroSection />
+        <HeroSection hideSun />
+        <img className="home-sun" src='./sun.gif' />
         <h2 style={{textAlign: 'center'}}>this site is under construction</h2>
-      <section className="splash-section">
-        <div className="splash-container"> 
-          <span className='splash-questionmark flip'>?</span>
-          <span className='splash-questionmark'>?</span>
-        </div></section>
       </div>
     </div>
   );
