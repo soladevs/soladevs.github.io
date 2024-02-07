@@ -129,29 +129,24 @@ nav ul li a:hover {
   text-align: center;
   user-select: none;
   pointer-events: all;
-  margin-top: -8.5vh;
   width: 100vw;
-
-  @media screen and (min-width: 620px) {
-    display: inline-flex;
-  }
 }
 
 
 
 .hero-sun {
   height: 64px;
-  position: relative;
-  margin-top: 14vh;
+  width: 79px;
+  margin-top: 8vh;
+  /* center and position fixed */
+  position: fixed;
+  z-index: -1;
+  left: calc(50vw - (79px / 2));
+  right: auto;
+
 
   @media screen and (min-width: 480px) {
-    margin-top: 20vh;
-  }
-
-  @media screen and (min-width: 620px) {
-    margin-top: 8vh;
-    max-height: 20%;
-    display: inline-flex;
+    margin-top: 12vh;
   }
 }
 
@@ -159,19 +154,19 @@ nav ul li a:hover {
   h1, p {
         position: fixed;
         z-index: -1;
-        left: 50%;
-        top: 8vh;
-        transform: translate(-50%, -50%);
+        left: auto;
+        right: auto;
   }
 
   h1 {
       padding-top: 8px;
-      padding-bottom: 8px;
+      padding-bottom: 32px;
       margin: 0;
       color: common.$accent;
       letter-spacing: 2px;
       width: 100vw;
-      font-size: 2.7rem; 
+      font-size: 3.4rem; 
+      top: 2vh;
 
       @media screen and (min-width: 720px) {
         font-size: 4rem;
@@ -181,11 +176,16 @@ nav ul li a:hover {
   p {
       padding-top: 7px;
       margin-top: 56px;
-      padding-bottom: 8px;
       width: 100vw;
       letter-spacing: 2px;
       color: #e4ddd5;
-  }
+      top: 4vh;
+
+      @media screen and (min-width: 720px) {
+        padding-bottom: 8px;
+        top: 6vh;
+      }
+    }
 
   z-index: -1;
   min-height: 24vh;
@@ -210,7 +210,7 @@ nav ul li a:hover {
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
+  width: 75%;
   padding: 10px;
 }
 
