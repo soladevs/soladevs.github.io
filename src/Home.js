@@ -18,7 +18,7 @@ import CursorLines from './CursorLines';
 const App = () => {
   return (
     <div>
-      <Navbar openInitialState={false}/>
+      <Navbar openInitialState={true} />
       <div className="main">
         <HeroSection hideSun />
         <img className="home-sun" src='./sun.gif' />

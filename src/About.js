@@ -4,7 +4,6 @@ import ReactMarkdown from 'react-markdown';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import PortfolioItem from './components/PortfolioItem';
 
 import './styles.scss';
 import './index.scss';
