@@ -4,19 +4,29 @@
     "subheading": "Page for testing purposes",
     "promo-image": "https://unsplash.it/350/350/?random",
     "promo-image-alt": "Alt text",
-    "section": "Coding",
+    "section": "development",
     "creation-date": "2022-01-01",
     "last-updated": "2022-01-01",
     "url-slug": "/#writing/example-1"
   },
   {
-    "heading": "Gallery Example Page",
-    "subheading": "Page for testing purposes",
+    "heading": "Peak District 2024 #1",
+    "subheading": "First set of pictures from a Feb '24 hike.",
     "promo-image": "https://unsplash.it/300/300/?random",
     "promo-image-alt": "Alt text",
-    "section": "Coding",
+    "section": "galleries",
     "creation-date": "2022-01-01",
     "last-updated": "2022-01-01",
-    "url-slug": "/#gallery/test-gallery"
+    "url-slug": "/#gallery/peakdistrict-2024-pt1"
+  },
+  {
+    "heading": "Peak District 2024 #2",
+    "subheading": "Second in a series of hike photos.",
+    "promo-image": "https://unsplash.it/300/300/?random",
+    "promo-image-alt": "Alt text",
+    "section": "galleries",
+    "creation-date": "2022-01-01",
+    "last-updated": "2022-01-01",
+    "url-slug": "/#gallery/peakdistrict-2024-pt2"
   }
 ]

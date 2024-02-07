@@ -19,7 +19,7 @@ const LongformArticle = () => {
 
   useEffect(() => {
     // Fetch article content
-    fetch("/content/galleries/"+ "testgallery" + ".json")
+    fetch("/content/galleries/"+ articleId + ".json")
       .then((response) => response.json())
       .then((data) => {
         setGalleryHeading(data.heading);
