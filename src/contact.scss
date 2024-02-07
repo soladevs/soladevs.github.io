@@ -40,7 +40,7 @@
     padding: 10px;    
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 32px;
     font-family: 'LouisGeorgeCafe';
     align-items: right;
@@ -48,8 +48,8 @@
     display: inline;
   }
 
-  .contact-form input:nth-child(8) {
-    height: 250px;
+  #message {
+    height: 35vh;
     width: 35vw;
 
     padding-top: 0;
