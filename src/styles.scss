@@ -121,8 +121,12 @@ nav ul li a:hover {
 }
 
 /* Footer */
-.footer-space {
+.footer, .footer-space {
+  position: relative;
+  z-index: -10;
   min-height: 100vh;
+  user-select: none;
+  pointer-events: none;
 }
 
 /* Hero section styles */
@@ -131,7 +135,7 @@ nav ul li a:hover {
   margin-top: 7vh;
   /* center and position fixed */
   position: fixed;
-  z-index: -1;
+  z-index: 1;
   left: calc(50vw - (100px / 2));
   right: auto;
 
@@ -145,7 +149,7 @@ nav ul li a:hover {
   user-select: none;
   pointer-events: all;
   width: 100vw;
-  z-index: -1;
+  z-index: 1;
   min-height: 20vh;
   max-height: fit-content;
 
@@ -155,7 +159,6 @@ nav ul li a:hover {
 
   h1, p {
         position: fixed;
-        z-index: -1;
         left: auto;
         right: auto;
   }
