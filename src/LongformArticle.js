@@ -15,9 +15,11 @@ const LongformArticle = () => {
   const [galleryHeading, setGalleryHeading] = useState([]);
   const [galleryCreationDate, setGalleryCreationDate] = useState([]);
 
+  const { articleId } = useParams();
+
   useEffect(() => {
     // Fetch article content
-    fetch("/content/galleries/testgallery.json")
+    fetch("/content/galleries/"+ "testgallery" + ".json")
       .then((response) => response.json())
       .then((data) => {
         setGalleryHeading(data.heading);
@@ -26,47 +28,6 @@ const LongformArticle = () => {
         setGalleryData(data.images);
       });
     });
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const articleBodies = document.querySelectorAll('.lf_article-body');
-      const header = document.querySelector('.article-heading');
-      const windowHeight = window.innerHeight;
-      const scrollPosition = window.scrollY;
-    
-      // Calculate the top and bottom positions of each article section
-      const articlePositions = Array.from(articleBodies).map((body) => {
-        const rect = body.getBoundingClientRect();
-        return {
-          top: rect.top + window.scrollY,
-          bottom: rect.bottom + window.scrollY,
-        };
-      });
-    
-      // Determine the index of the article section that is mostly in view
-      const currentArticleIndex = articlePositions.findIndex(
-        (pos) => pos.top <= windowHeight * 0.25 + scrollPosition && pos.bottom >= windowHeight * -0.25 + scrollPosition
-      );
-    
-    
-      // Hide the header if it's off-screen
-      if (header) {
-        const headerRect = header.getBoundingClientRect();
-        if (headerRect.bottom <= 0) {
-          header.style.opacity = 0;
-        } else {
-          header.style.opacity = 1;
-        }
-      }
-    };
-    
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <div>
