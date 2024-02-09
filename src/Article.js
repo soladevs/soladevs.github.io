@@ -63,7 +63,7 @@ const Article = () => {
             <ReactMarkdown>{article}</ReactMarkdown>
           </div>
       </section>
-      <Footer />
+      <div className='footer-space'> </div>
       </div>
     </div>
   );
