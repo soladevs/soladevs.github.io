@@ -22,11 +22,11 @@ html, body {
 
 .article {
     .hero {
-        z-index: 2;
+        z-index: 3;
         &::before {
             content: "";
             background-color: common.$background;
-            height: 25vh;
+            height: 27vh;
             width: 200vw;
             display: block;
             position: fixed;
