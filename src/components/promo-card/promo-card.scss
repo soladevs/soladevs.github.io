@@ -10,19 +10,23 @@
 }
 
 .promo-card_container {
-    &:hover {
-        color: common.$accent!important;
-
-        & .promo-card_image {
-            box-shadow: 4px 4px 0px common.$accent;
+    @media screen and (min-width: 720px) {
+        &:hover {
+            color: common.$accent!important;
+    
+            & .promo-card_image {
+                box-shadow: 4px 4px 0px common.$accent;
+            }
         }
     }
 }
 
 .promo-card_read-more {
-    &:hover {
-        color: common.$accent;
-        border: 1px solid common.$accent;
+    @media screen and (min-width: 720px) {
+        &:hover {
+            color: common.$accent;
+            border: 1px solid common.$accent;
+        }
     }
 }
 

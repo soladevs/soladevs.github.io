@@ -118,15 +118,15 @@ main {
   @media screen and (min-width: 720px) {
     left: 120px;
     right: unset;
-  }
     
-  &:hover {
-    cursor: pointer;
-    font-size: 2.6rem;
-    color: common.$accent;
-    border-color: common.$accent;
-    box-shadow: 0 0 5px common.$accent;
-}
+    &:hover {
+      cursor: pointer;
+      font-size: 2.6rem;
+      color: common.$accent;
+      border-color: common.$accent;
+      box-shadow: 0 0 5px common.$accent;
+  }
+  }
 }
 
 nav ul {
