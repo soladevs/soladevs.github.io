@@ -36,7 +36,7 @@ const Article = () => {
     console.log(meta);
 
   return (
-    <div>
+    <div className='article-container'>
       <Navbar openInitialState={false} />
       <div className="main article">
         <HeroSection />

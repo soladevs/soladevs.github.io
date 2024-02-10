@@ -9,16 +9,58 @@ html, body {
 .writing {
     z-index: 20;
     position: relative;
+    
+}
+
+.article-container {
+    background-color: #6988d0;
+    z-index: 1;
+    position: relative;
+}
+
+.article {
+    .hero {
+        &::before {
+            content: "";
+            background-color: common.$background;
+            height: 25vh;
+            width: 200vw;
+            display: block;
+            position: fixed;
+            z-index: -1;
+            top: 0;
+            left: -52vw;
+            border-radius: 50% / 0 0 100% 100%; 
+            pointer-events: none;
+            user-select: none;
+          }
+    }
 }
 
 .article-body {
-    background-color: #6988d0;
+    
     padding-left: 10vw;
     text-align: left;
     width: 100vw;
     position: relative;
     z-index: 20;
     margin-top: 0;
+    background-color: #6988d0;
+
+    &::before {
+        content: "";
+        background-color: common.$background;
+        margin-left:-50vw;
+        width: 200vw;
+        display: inline-block;
+        margin-top: -9vh;
+        height: 9vh;
+        position: relative;
+        z-index: 25;
+        border-radius: 50% / 100% 100% 0 0;
+        pointer-events: none;
+        user-select: none;
+    }
 
     @media screen and (min-width: 1024px) {
         padding-left: 25vw;
@@ -53,8 +95,7 @@ html, body {
 }
 
 .article-heading {
-    height: 60vh;
-
+    height: 70vh;
         
     img {
         width: 100vw;
@@ -85,8 +126,7 @@ html, body {
 
     h1 { 
         display: block;
-        text-align: right;
-        margin-left: 20vw;
+        margin-left: 10vw;
         font-size: 2rem;
         font-family: 'VeeWithAMarker';
 
@@ -127,6 +167,22 @@ html, body {
     padding-bottom: 96px;
     font-size: 1.2rem;
     max-width: 90%;
+    margin-bottom: -35vh;
+    z-index: 14;
+
+    &::after {
+        content: "";
+        background-color: common.$background;
+        display: inline-block;
+        position: relative;
+        height: 25vh;
+        width: 200vw;
+        left: -52vw;
+        border-radius: 50%/0 0 100% 100%;
+        margin-left: -25vw;
+        pointer-events: none;
+        user-select: none;
+      }
 
     @media screen and (min-width: 1024px) {
         max-width: 80%;
