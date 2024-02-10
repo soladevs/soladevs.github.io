@@ -6,12 +6,9 @@ html, body {
     z-index: 0;
 }
 
-.main {
-    margin-top: 10vh;
-
-    @media screen and (min-width: 480px) {
-        margin-top: 5vh;
-    }
+.writing {
+    z-index: 20;
+    position: relative;
 }
 
 .article-body {
@@ -20,7 +17,7 @@ html, body {
     text-align: left;
     width: 100vw;
     position: relative;
-    z-index: 12;
+    z-index: 20;
     margin-top: 0;
 
     @media screen and (min-width: 1024px) {

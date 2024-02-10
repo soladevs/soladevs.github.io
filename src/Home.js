@@ -12,18 +12,22 @@ import ContactForm from './components/ContactForm';
 import SkillsSection from './components/SkillsSection';
 import NoiseGenerator from './NoiseGenerator';
 import WritingPage from './WritingPage';
+import Clouds from './Clouds';
+import ArticleCards from './ArticleCards';
+import CursorLines from './CursorLines';
 
 import './styles.scss';
-import CursorLines from './CursorLines';
 
 const App = () => {
   return (
     <div>
       <div className="main home">
+      <Navbar openInitialState={false}/>
+        <Clouds />
         <HeroSection hideSun />
         <img className="home-sun" src='./sun.gif' />
         <div className="home-padding" />
-        <WritingPage />
+        <ArticleCards />
       </div>
     </div>
   );

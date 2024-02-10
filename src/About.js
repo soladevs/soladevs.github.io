@@ -8,6 +8,7 @@ import HeroSection from './components/HeroSection';
 import './styles.scss';
 import './index.scss';
 import './article.scss';
+import Clouds from './Clouds';
 
 
 
@@ -27,6 +28,7 @@ const About = () => {
   return (
     <div>
       <Navbar openInitialState={false}/>
+      <Clouds />
       <div className="main">
         <HeroSection />
       <section className="about-body">

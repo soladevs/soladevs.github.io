@@ -9,11 +9,13 @@ import './index.scss';
 import './article.scss';
 import './contact.scss';
 import ContactForm from './components/ContactForm';
+import Clouds from './Clouds';
 
 const Contact = () => {
   return (
     <div>
       <Navbar openInitialState={false}/>
+      <Clouds />
       <div className="main">
         <HeroSection />
       <section className="contact-body">

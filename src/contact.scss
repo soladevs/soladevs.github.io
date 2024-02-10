@@ -3,6 +3,8 @@
 
 .contact-form {
     backdrop-filter: blur(4px);
+    z-index: 6;
+    position: relative;
 }
 
 .contact-form h2 {
@@ -44,6 +46,14 @@
     margin-bottom: 32px;
     font-family: 'LouisGeorgeCafe';
     align-items: right;
+    background-color: #e7e7e723;
+    border: none;
+    color: common.$primary-text;
+    backdrop-filter: blur(10px);
+
+    &:active {
+        border: 2px solid common.$accent;
+    }
     
     display: inline;
 

@@ -27,17 +27,44 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+#cloud-container, #fg-cloud-container, #bg-cloud-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; 
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none; 
+}
+
+#fg-cloud-container {
+  z-index: 5;
+  filter: hue-rotate(-25deg) contrast(1) opacity(0.4);
+}
+
+#bg-cloud-container {
+  z-index: 3;
+  filter: hue-rotate(25deg) contrast(0.6) opacity(0.2);
 }
 
 .home {
-  .hero-sun {
+  .writing .hero {
     display: none;
+    height: 0;
+  }
+  .writing {
+    backdrop-filter: blur(10px);
   }
 }
 
 .home-padding {
   width: 100vw;
-  height: 35vh;
+  height: 65vh;
+  z-index: 55;
 }
 
 section {
@@ -155,8 +182,13 @@ nav ul li a:hover {
   right: auto;
 
   @media screen and (min-width: 480px) {
-    margin-top: 7vh;
+    margin-top: 10vh;
   }
+}
+
+.hero-link {
+  position: relative;
+  z-index: 15;
 }
 
 .hero {
@@ -164,12 +196,12 @@ nav ul li a:hover {
   user-select: none;
   pointer-events: all;
   width: 100vw;
-  z-index: 1;
-  min-height: 11vh;
+  z-index: 22;
+  min-height: 12vh;
   max-height: fit-content;
 
   @media screen and (min-width: 480px) {
-    min-height: 16vh;
+    min-height: 18vh;
   }
 
   h1, p {
