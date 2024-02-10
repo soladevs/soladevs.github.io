@@ -174,16 +174,12 @@ nav ul li a:hover {
 /* Hero section styles */
 .hero-sun {
   width: 100px;
-  margin-top: 10vh;
+  margin-top: 11vh;
   /* center and position fixed */
   position: fixed;
   z-index: -1;
   left: calc(50vw - (100px / 2));
   right: auto;
-
-  @media screen and (min-width: 480px) {
-    margin-top: 10vh;
-  }
 }
 
 .hero-link {
@@ -197,7 +193,7 @@ nav ul li a:hover {
   pointer-events: all;
   width: 100vw;
   z-index: 22;
-  min-height: 18vh;
+  min-height: 20vh;
   max-height: fit-content;
 
   h1, p {
