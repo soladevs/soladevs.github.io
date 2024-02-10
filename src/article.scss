@@ -169,22 +169,7 @@ html, body {
     padding-bottom: 96px;
     font-size: 1.2rem;
     max-width: 90%;
-    margin-bottom: -35vh;
     z-index: 14;
-
-    &::after {
-        content: "";
-        background-color: common.$background;
-        display: inline-block;
-        position: relative;
-        height: 25vh;
-        width: 200vw;
-        left: -52vw;
-        border-radius: 50%/0 0 100% 100%;
-        margin-left: -25vw;
-        pointer-events: none;
-        user-select: none;
-      }
 
     @media screen and (min-width: 1024px) {
         max-width: 80%;
@@ -547,6 +532,7 @@ html, body {
     display: block;
     position: relative;
     background-color: transparent;
+    font-family: 'VeeWithAMarker';
     color: common.$accent;
     margin-top: 12vh;
     padding: 8px;
@@ -558,4 +544,5 @@ html, body {
     border: 2px solid common.$accent;
     backdrop-filter: blur(4px);
     box-shadow: 0 0 4px common.$accent;
+    cursor: pointer;
   }

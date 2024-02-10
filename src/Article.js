@@ -61,6 +61,8 @@ const Article = () => {
       <section className="article-body">
           <div className='article-content'>
             <ReactMarkdown>{article}</ReactMarkdown>
+            <button className="lf-button_return" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth'  })}>Return to top</button>
+
           </div>
       </section>
       <div className='footer-space'> </div>
