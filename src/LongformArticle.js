@@ -32,7 +32,7 @@ const LongformArticle = () => {
   return (
     <div>
       <Navbar openInitialState={false} />
-      <div className="main article">
+      <div className="main lf_article">
         <HeroSection />
         <div className="lf_article-container">
           <h1 className="gallery-heading">{galleryHeading}</h1>
