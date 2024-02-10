@@ -18,6 +18,8 @@ html, body {
     position: relative;
 }
 
+
+
 .article {
     .hero {
         &::before {
@@ -298,6 +300,7 @@ html, body {
     position: relative;
     padding-top: 32px;
     padding-bottom: 96px;
+    z-index: 25;
   }
   
   .lf_article-body {
