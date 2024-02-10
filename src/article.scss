@@ -341,6 +341,9 @@ html, body {
 
 .lf_article-body, .about-body {
 
+    position: relative;
+    z-index: 15;
+
     a {
         color: common.$offwhite;
 

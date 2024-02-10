@@ -28,6 +28,7 @@ const App = () => {
         <img className="home-sun" src='./sun.gif' />
         <div className="home-padding" />
         <ArticleCards />
+        <Footer />
       </div>
     </div>
   );
