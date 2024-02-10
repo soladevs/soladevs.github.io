@@ -22,7 +22,6 @@ html, body {
 
 .article {
     .hero {
-        z-index: 3;
         &::before {
             content: "";
             background-color: common.$background;
@@ -38,8 +37,9 @@ html, body {
             user-select: none;
           }
     }
-    .hero-sun {
-        z-index: 2;
+
+    .hero-title, .hero-catchphrase, .hero-sun {
+        z-index: 3;
     }
 }
 
