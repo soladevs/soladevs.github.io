@@ -1,0 +1,43 @@
+{
+    "heading": "Meet Bella",
+    "subheading": "",
+    "introduction": "The site is a little empty right now, why not :)",
+    "promo-image": "https://media.discordapp.net/attachments/1059119419764244604/1208751402210426991/bella_5.jpg?ex=65e46c77&is=65d1f777&hm=9a1471ba3dc87b062fe834a6ddf458e55310979d0057d31f2cb3d3f5dca515fd&=&format=webp&width=853&height=640",
+    "promo-image-alt": "Alt text",
+    "section": "Coding",
+    "creation-date": "2024-02-04",
+    "last-updated": "2024-02-15",
+    "url-slug": "example-1",
+    "images": [
+        {
+            "url": "https://cdn.discordapp.com/attachments/1059119419764244604/1208751399802904576/20170304_162343_HDR.jpg?ex=65e46c77&is=65d1f777&hm=9626d8a9a79a94da20fc258b575694c530a4334d01869948a15bd5007314bf4d&",
+            "alt": "Alt text",
+            "title": " ",
+            "description": " "
+        },
+        {
+            "url": "https://cdn.discordapp.com/attachments/1059119419764244604/1208751403074588702/IMG_20190813_145515.jpg?ex=65e46c78&is=65d1f778&hm=fb7a8f02bc8d8bdabdbf0346e170864ad58896c85d7a406bc39a6e97dd5f17e3&",
+            "alt": "Alt text",
+            "title": " ",
+            "description": " "
+        },
+        {
+            "url": "https://cdn.discordapp.com/attachments/1059119419764244604/1208751405163085924/IMG_20190824_201459_1.jpg?ex=65e46c78&is=65d1f778&hm=4679b460baf2515d3a18e5502413c027cc0d54a9d90efe90af84372560431a93&",
+            "alt": "Alt text",
+            "title": " ",
+            "description": " "
+        },
+        {
+            "url": "https://cdn.discordapp.com/attachments/1059119419764244604/1208751400670994532/IMG_20191225_131624.jpg?ex=65e46c77&is=65d1f777&hm=beae6462b571adfb37ff8c121b4dd2024bab3f5adb9f4be4603fa5e6c154417d&",
+            "alt": "Alt text",
+            "title": " ",
+            "description": " "
+        },
+        {
+            "url": "https://cdn.discordapp.com/attachments/1059119419764244604/1208751402210426991/bella_5.jpg?ex=65e46c77&is=65d1f777&hm=9a1471ba3dc87b062fe834a6ddf458e55310979d0057d31f2cb3d3f5dca515fd&",
+            "alt": "Alt text",
+            "title": " ",
+            "description": " "
+        }
+    ]
+  }
