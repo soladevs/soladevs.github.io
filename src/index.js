@@ -27,7 +27,8 @@ const App = () => {
 };
 
 const container = document.getElementById('root');
-document.title = "solapowered ☀︎"
+document.title = "☀︎ solapowered"
+document.description = "hi! i'm a software developer, designer, creative and maker of things"
 const root = createRoot(container);
 document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width, initial-scale=1');
 
