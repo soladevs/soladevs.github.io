@@ -2,7 +2,7 @@
   {
     "heading": "Regular Article Example Page",
     "subheading": "Page for testing purposes",
-    "promo-image": "https://unsplash.it/350/350/?random",
+    "promo-image": "https://fastly.picsum.photos/id/481/350/350.jpg?hmac=28TMRM-4STN9zozM7ckMd1R9lzbNwSdcF1gJO87WkZg",
     "promo-image-alt": "Alt text",
     "section": "development",
     "creation-date": "2022-01-01",
