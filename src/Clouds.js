@@ -15,7 +15,8 @@ function createClouds() {
     const bgCloudContainer = document.getElementById('bg-cloud-container'); // Assuming there's a container element for the clouds
     
     const cloud = document.createElement('img');
-    cloud.src = Math.random() > 0.5 ? './cloud.svg' : './cloud2.svg';
+    const cloudImageArray = ['./cloud1.png', './cloud2.png', './cloud3.png', './cloud4.png'];
+    cloud.src = cloudImageArray[Math.floor(Math.random()*cloudImageArray.length)];
     cloud.className = 'cloud';
     cloud.style.top = `${Math.random() * 65 - 20}vh`;
     cloud.style.left = `110vw`;
@@ -28,7 +29,7 @@ function createClouds() {
     const blur  = Math.random() * 75 + 25;
     
     if(zindex > 2) {
-        cloud.style.filter = `blur(${blur}px)`;
+        cloud.style.filter = `blur(${blur/2}px)`;
 
         fgCloudContainer.appendChild(cloud);
 
@@ -48,10 +49,10 @@ function createClouds() {
       if (isOffLeftBounds) {
         cloud.remove(); // Remove the cloud from the DOM
       } else {
-        const duration = Math.random() * 20 + 20; // Random duration for the animation (between 10 and 30 seconds)
+        const duration = Math.random() * 25 + 25; // Random duration for the animation (between 10 and 30 seconds)
   
         cloud.style.transition = `transform ${duration}s linear`; // Set the transition duration for smooth movement
-        cloud.style.transform = `translateX(-600%)`; // Move the cloud to the left edge of the screen
+        cloud.style.transform = `translateX(-360%)`; // Move the cloud to the left edge of the screen
   
         setTimeout(() => {
           cloud.remove(); // Remove the cloud from the DOM after the animation duration
