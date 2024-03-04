@@ -10,6 +10,7 @@ import Contact from './Contact';
 import About from './About';
 import Project from './Project';
 import LongformArticle from './LongformArticle';
+import AquariumGame from './AquariumGame';
 
 const App = () => {
   let routes = useRoutes([
@@ -21,6 +22,7 @@ const App = () => {
     { path: "/gallery/:articleId", element: <LongformArticle /> },
     { path: "/contact", element: <Contact /> },
     { path: "/about", element: <About /> },
+    { path: "/aquarium", element: <AquariumGame /> },
     // // ...
   ]);
   return routes;
