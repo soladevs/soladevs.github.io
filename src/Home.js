@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import Clouds from './Clouds';
 import ArticleCards from './ArticleCards';
-import UnityComponent from './UnityComponent';
 
 import './index.scss';
 
