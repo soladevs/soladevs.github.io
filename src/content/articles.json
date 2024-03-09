@@ -1,13 +1,13 @@
 [
   {
-    "heading": "Regular Article Example Page",
-    "subheading": "Page for testing purposes",
-    "promo-image": "https://fastly.picsum.photos/id/481/350/350.jpg?hmac=28TMRM-4STN9zozM7ckMd1R9lzbNwSdcF1gJO87WkZg",
+    "heading": "Welcome!",
+    "subheading": "A brief introduction to the site.",
+    "promo-image": "https://i.imgur.com/REsZCxs.jpg",
     "promo-image-alt": "Alt text",
     "section": "development",
     "creation-date": "2022-01-01",
     "last-updated": "2022-01-01",
-    "url-slug": "/#writing/example-1"
+    "url-slug": "/#writing/welcome-article"
   },
   {
     "heading": "pictures of my cat #1",
