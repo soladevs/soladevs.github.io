@@ -3,11 +3,21 @@
     "heading": "Welcome!",
     "subheading": "A brief introduction to the site.",
     "promo-image": "https://i.imgur.com/REsZCxs.jpg",
-    "promo-image-alt": "Alt text",
+    "promo-image-alt": "Two trees, one small and the larger one is heart shaped. The sky is clear and the sun is shining strong.",
     "section": "development",
     "creation-date": "2022-01-01",
     "last-updated": "2022-01-01",
     "url-slug": "/#writing/welcome-article"
+  },
+  {
+    "heading": "Salford Shots",
+    "subheading": "A few highlights from the many photos I took around around Salford, Greater Manchester.",
+    "promo-image": "https://i.imgur.com/967iCr6.jpeg",
+    "promo-image-alt": "A patch of flowers, with a softly blurred medieval English building obscured in the background",
+    "section": "galleries",
+    "creation-date": "2024-Mar-10",
+    "last-updated": "2024-Mar-10",
+    "url-slug": "/#gallery/salfordshots"
   },
   {
     "heading": "pictures of my cat #1",
