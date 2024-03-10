@@ -1,0 +1,43 @@
+{
+    "heading": "Salford Shots",
+    "subheading": "",
+    "introduction": "A few of my favourite pictures around Salford, Greater Manchester. ",
+    "promo-image": "https://i.imgur.com/967iCr6.jpeg",
+    "promo-image-alt": "A patch of flowers, with a softly blurred medieval English building obscured in the background",
+    "section": "Coding",
+    "creation-date": "2024-02-04",
+    "last-updated": "2024-02-15",
+    "url-slug": "example-1",
+    "images": [
+        {
+            "url": "https://i.imgur.com/fSQmwPl.jpeg",
+            "alt": "A strikingly red bridge on a sunny day.",
+            "title": " ",
+            "description": " "
+        },
+        {
+            "url": "https://i.imgur.com/UfMbGzH.jpg",
+            "alt": "Two of the BBC buildings at MediaCityUK.",
+            "title": " ",
+            "description": " "
+        },
+        {
+            "url": "https://i.imgur.com/nAVM9dn.jpeg",
+            "alt": "A patch of trees and bushes besides a turn in a river.",
+            "title": " ",
+            "description": " "
+        },
+        {
+            "url": "https://i.imgur.com/WDgyOMR.jpg",
+            "alt": "The Imperial War Museum North in snowy weather.",
+            "title": " ",
+            "description": " "
+        },
+        {
+            "url": "https://i.imgur.com/PJffNeM.jpg",
+            "alt": "A patch of flowers, with a softly blurred medieval English building obscured in the background",
+            "title": " ",
+            "description": " "
+        }
+    ]
+  }
